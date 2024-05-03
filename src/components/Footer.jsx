@@ -9,7 +9,7 @@ import { InstagramIcon, GithubIcon, LinkedInIcon, } from './Icons'
 
 const Footer = () => {
     const router = useRouter();
-    let link = "https://gdsc.community.dev/vignans-institute-of-information-technology-visakhapatnam/"
+    let link = "https://github.com/ACM-Vignans-IIT"
     return (
         <div>
             <footer className='w-full border-t-[0.5px] border-solid border-t-dark  dark:border-t-light font-medium text-lg dark:text-light sm:text-base'>
@@ -50,7 +50,7 @@ const Footer = () => {
                             >
                                 <InstagramIcon />
                             </motion.a>
-                            <motion.a href="#" target={"_blank"} className="w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark"
+                            <motion.a href="https://github.com/ACM-Vignans-IIT" target={"_blank"} className="w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                             >

@@ -1,6 +1,7 @@
 import React from "react";
 import MemberProfile from "@/components/MemberProfile";
 import vignan_logo from '../../../public/asset/img/teams/others/vignan_logo.png'
+import Head from "next/head";
 
 const Member = () => {
   return (

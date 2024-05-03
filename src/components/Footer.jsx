@@ -38,19 +38,19 @@ const Footer = () => {
                             >
                                 <TwitterIcon />
                             </motion.a> */}
-                            <motion.a href="https://www.linkedin.com/company/gdscviit" target={"_blank"} className="w-6 mx-3 sm:mx-1"
+                            <motion.a href="#" target={"_blank"} className="w-6 mx-3 sm:mx-1"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                             >
                                 <LinkedInIcon />
                             </motion.a>
-                            <motion.a href="https://www.instagram.com/gdscviit/" target={"_blank"} className="w-6 mx-3 mt-1 sm:mt-0 sm:mr-5 rounded-full"
+                            <motion.a href="#" target={"_blank"} className="w-6 mx-3 mt-1 sm:mt-0 sm:mr-5 rounded-full"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                             >
                                 <InstagramIcon />
                             </motion.a>
-                            <motion.a href="https://github.com/" target={"_blank"} className="w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark"
+                            <motion.a href="#" target={"_blank"} className="w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                             >

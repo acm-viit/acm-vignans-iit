@@ -255,7 +255,7 @@ const Team2024 = () => {
                     <ProfileCard
                         href="#"
                         profilePic={m_tejesh}
-                        name={`Yerra Dinesh`}
+                        name={`M Tejesh`}
                         role={`Member`}
                         linkedin={``}
                         github={``}

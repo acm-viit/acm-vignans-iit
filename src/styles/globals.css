@@ -89,7 +89,7 @@ main {
 
 body {
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.5s; 
   @apply bg-light dark:bg-dark;
 
   /* scrollbar */

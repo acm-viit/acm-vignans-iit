@@ -100,7 +100,7 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={thumbnail} />
       </Head>
-      <main>
+      <main className="text-dark dark:text-light bg-light dark:bg-dark">
         <Layout className="pt-8 lg:!pt-2">
           <div className="grid grid-cols-2 lg:grid-cols-1">
 
@@ -117,12 +117,12 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
                   Hosted by:
                   <div className="pt-1 w-[6rem] border-b-[0.5px] border-solid border-[#6b6b6b] dark:border-[#d3d3d3]"></div>
                 </div>
-                <div className="lg:pt-0">
+                <div className="lg:pt-0 ">
                   {Object.keys(organizers).map((key, index) => (
                     <div key={index} className="pl-2 pb-2 font-semibold">
                       <Link href={organizers[key].link} className="group relative">
                         {organizers[key].name}
-                        <span className="h-[1px] bg-dark absolute left-0 bottom-0 w-0 transition-all duration-300 group-hover:w-full"></span>
+                        <span className="h-[1px] bg-dark dark:bg-light absolute left-0 bottom-0 w-0 transition-all duration-300 group-hover:w-full"></span>
                       </Link>
                     </div>
                   ))}
@@ -148,7 +148,7 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
                     <div key={index} className="pl-2 pb-2 font-semibold">
                       <Link href={organizers[key].link} className="group relative">
                         {organizers[key].name}
-                        <span className="h-[1px] bg-dark absolute left-0 bottom-0 w-0 transition-all duration-300 group-hover:w-full"></span>
+                        <span className="h-[1px] bg-dark dark:bg-light absolute left-0 bottom-0 w-0 transition-all duration-300 group-hover:w-full"></span>
                       </Link>
                     </div>
                   ))}

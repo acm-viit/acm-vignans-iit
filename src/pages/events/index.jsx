@@ -45,10 +45,10 @@ const FeaturedEvent = ({ type, link, title, description, img, linkedin, instagra
   const router = useRouter();
   return (
     <>
-      <article
-        className="w-[80%] sm:w-full flex items-center justify-between relative rounded-br-2xl
+      <main
+        className="w-[70rem] sm:w-full flex items-center justify-between relative rounded-br-2xl
         rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-[#242424] shadow-2xl p-6
-        lg:flex-col lg:p-4 xs:rounded-2xl xs:rounded-br-3xl xs:p-4
+        lg:flex-col lg:p-4 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 text-dark dark:text-light overflow-hidden
         "
       >
         <div className="absolute top-0 -right-3 -z-10 w-[100.7%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
@@ -76,13 +76,13 @@ const FeaturedEvent = ({ type, link, title, description, img, linkedin, instagra
             target="_blank"
             className=""
           >
-            <h2 className="relative group my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
+            <h2 className="relative group my-2 w-full text-left text-4xl font-bold sm:text-sm">
 
               {title}
               <span className={`h-[2px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === link ? 'w-full' : 'w-0'} dark:bg-light`}></span>
             </h2>
           </Link>
-          <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          <p className="my-2 font-medium sm:text-sm">
             {description}
           </p>
           <div className="mt-2 flex items-center">
@@ -142,7 +142,7 @@ const FeaturedEvent = ({ type, link, title, description, img, linkedin, instagra
           </div>
 
         </div>
-      </article>
+      </main>
     </>
   );
 };

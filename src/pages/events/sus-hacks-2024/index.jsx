@@ -5,7 +5,7 @@ import SUS_HACKS from '../../../../public/asset/img/events/sus_hacks_april_2024/
 
 const SusHacks2024 = () => {
     return (
-        <main>
+        <main className=''>
             <EventPage
                 title={`Sus-Hacks 2024`}
                 description={`

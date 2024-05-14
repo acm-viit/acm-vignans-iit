@@ -14,7 +14,7 @@ export default function TeamMembers() {
         <link rel="icon" type="image/svg" href="../../public/asset/favicon/favicon-16x16.png" sizes="16x16" />
         <link rel="apple-touch-icon" sizes="180x180" href="../../public/asset/favicon/apple-touch-icon.png" />
       </Head>
-      <main className="text-dark dark:text-light w-full h-full">
+      <main className="text-dark dark:text-light">
 
         {/* Teams Section | 2024, 2021 */}
         <Teams />

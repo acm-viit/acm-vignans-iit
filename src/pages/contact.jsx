@@ -19,7 +19,7 @@ const Contact = () => {
           text="Contact Us"
           className="mb-8 lg:!text-xl sm:mb-8 sm:!text-6xl xs:!text-4xl pt-8 flex items-center justify-center"
         />
-        <div className="mb-28 mt-14 md:mt-0">
+        <div className="mb-28 mt-14 md:mt-0 ">
           <div className="grid grid-cols-2 sm:grid-cols-1 items-center gap-16 p-8 mx-auto max-w-4xl bg-light dark:bg-dark  border sm:border-0 border-dark dark:border-light rounded-md text-dark dark:text-light font-[sans-serif]">
             <div>
               <h1 className="text-xl font-extrabold">Let&apos;s Talk</h1>

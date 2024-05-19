@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+
+
+.about_section {
+    /* @apply ; */
+
+    a {
+        @apply font-bold text-blue-500 hover:text-blue-600;
+    }
+
+    code {
+        @apply bg-gray-800/15 dark:bg-gray-200/15 rounded-md p-0.5 px-1.5 text-sm font-semibold;
+        position: relative;
+        display: inline-block;
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    code::before,
+    code::after {
+        content: '';
+        position: absolute;
+        visibility: hidden;
+    }
+}

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import favicon from '../../public/asset/favicon/favicon-32x32.png'
 
 const NotFound = () => {
     return (

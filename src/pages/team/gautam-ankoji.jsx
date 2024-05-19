@@ -1,21 +1,12 @@
-import MemberProfile from "@/components/MemberProfile";
 import React from "react";
-import aditya_rompella from '../../../public/assets/team/2023/aditya_rompella.jpg'
+import MemberProfile from "@/components/MemberProfile";
 import gautam_ankoji from '../../../public/asset/img/teams/2024/gautam_ankoji.png'
 import Head from "next/head";
 
 const Member = () => {
     return (
         <>
-            <Head>
-                <title>Gautam Ankoji | ACM Vignan&apos;s IIT | Association for Computing Machinery Vignan&apos;s Institute of Information Technology - Visakhapatna</title>
-                <link rel="icon" type="image/svg" href="../../public/asset/favicon/favicon-32x32.png" sizes="32x32" />
-                <link rel="icon" type="image/svg" href="../../public/asset/favicon/android-chrome-192x192.png" sizes="192x192" />
-                <link rel="icon" type="image/svg" href="../../public/asset/favicon/android-chrome-512x512.png" sizes="512x512" />
-                <link rel="icon" type="image/svg" href="../../public/asset/favicon/favicon-16x16.png" sizes="16x16" />
-                <link rel="apple-touch-icon" sizes="180x180" href="../../public/asset/favicon/apple-touch-icon.png" />
-            </Head>
-            <main className={`w-[100vw]`}>
+            <main className={`flex min-h-screen flex-col items-center justify-between text-dark dark:text-light`}>
                 <MemberProfile
                     profilePic={gautam_ankoji}
                     name={`Gautam Ankoji`}
@@ -26,15 +17,13 @@ const Member = () => {
                     about={`
                         <!-- Introduction and Information -->
                         <p>&#8287;☯ Hi, I'm <strong>Gautam Ankoji</strong></p>
-                        <p>&#8287;☯ I have expertise in:</p>
-                        <br/> 
-                        <div align="center">
-                            <strong><code>Astrophysics</code></strong> | <strong><code>Full stack Development</code></strong> | <strong><code>Compitative Programming</code></strong> | <strong><code>Pen Testing</code></strong> | <strong><code>Designing and Editing</code></strong> | <strong><code>Game Development</code></strong>
+                        <p class="pb-2">&#8287;☯ I have expertise in:</p>
+                        <div class="pb-2 md:pl-6" align="">
+                            <span class="md:hidden">&ensp;&ensp;&ensp;</span><code>Astrophysics</code> | <code>Full stack Development</code> | <code>Competitive Programming</code> | <code>Pen Testing</code> | <code>Designing and Editing</code> | <code>Game Development</code>
                             </div>
-                            <br/>
                         <p>&#8287;☯ I'm currently learning how to identify vulnerabilities using <strong>Burp Suite</strong> and <strong>Wireshark</strong>.</p>
-                        <p>&#8287;☯ I'm looking to collaborate on <strong>design and development</strong>.</p>
-                        <p>&#8287;☯ How to reach me ⟶ <a href="https://t.me/herogautam" target="_blank"><strong>telegram/gautamankoji</strong></a></p>
+                        <p>&#8287;☯ I'm looking to collaborate on <strong>distributed systems and core backend development</strong>.</p>
+                        <p>&#8287;☯ How to reach me ⟶ <a href="https://t.me/herogautam" target="_blank">telegram/gautamankoji</a></p>
                     `}
                 />
             </main>

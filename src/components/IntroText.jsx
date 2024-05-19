@@ -30,9 +30,9 @@ const singleWord = {
 
 const IntroText = ({ text, className = "" }) => {
     return (
-        <div className=' overflow-hidden sm:py-0'>
+        <div className='overflow-hidden py-4'>
             <motion.h1
-                className={`text-dark font-bold capitalize text-8xl xl:text-6xl lg:text-6xl md:text-4xl sm:text-2xl xs:text-[16px]  dark:text-light ${className}`}
+                className={`text-dark font-bold capitalize text-8xl xl:text-6xl lg:text-6xl md:text-4xl sm:text-2xl xs:text-lg dark:text-light ${className}`}
                 variants={quote}
                 initial="initial"
                 animate="animate"

@@ -8,13 +8,16 @@
 @import url("../../public/assets/fonts/other/neue-montreal/neue-montreal.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"); */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
 /* custom css */
 @import url("./Buttons.module.css");
 @import url("./Events.module.css");
 @import url("./Hero.module.css");
 @import url("./Profilecard.module.css");
+@import url("./ProfileAboutSection.module.css");
 
 .font-poppins {
   font-family: "Poppins", sans-serif;
@@ -32,13 +35,16 @@
   font-family: "Carpenter", sans-serif;
 }
 
+.font-quicksand-sans {
+  font-family: "Quicksand", sans-serif;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: "Poppins", sans-serif; */
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 1.5px;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .dark,
@@ -46,7 +52,7 @@
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.selector {
+.selector-none {
   user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
@@ -89,11 +95,14 @@ main {
 
 body {
   overflow-x: hidden;
-  transition: 0.5s; 
-  @apply bg-light dark:bg-dark;
+  transition: 0.5s;
+  /* font-family: 'Roboto', sans-serif; */
+  @apply bg-light dark:bg-dark font-medium;
+
 
   /* scrollbar */
   &::-webkit-scrollbar {
+    transition: 0.5s;
     @apply w-[14px] h-1;
   }
 
@@ -103,11 +112,12 @@ body {
   }
 
   &::-webkit-scrollbar-track-piece {
-    @apply dark:bg-[#202324] bg-[#cfcfcf];
+    @apply dark:bg-dark bg-light;
+    transition: 0.5s;
   }
 
   &::-webkit-scrollbar-corner {
-    @apply dark:bg-[#202324] bg-[#cfcfcf];
+    @apply dark:bg-dark bg-light;
   }
 
   &::-webkit-resizer {
@@ -129,15 +139,16 @@ body {
   /* Buttons */
   &::-webkit-scrollbar-button:single-button {
     @apply dark:hover:bg-[#454a4d] hover:bg-[#9d9d9d] rounded-sm;
-    /* background-color: #cfcfcf; */
+    /* background-color: #ffffff; */
     display: block;
     border-style: solid;
-    height: 12px;
-    width: 16px;
+    height: 9px;
+    width: 8px;
   }
+
   /* Up */
   &::-webkit-scrollbar-button:single-button:vertical:decrement {
-    border-width: 0 6px 6px 6px;
+    border-width: 0 8px 7px 8px;
     @apply border-transparent border-b-[#454a4d] dark:border-b-[#9d9d9d];
     /* border-color: transparent transparent #555555 transparent; */
   }
@@ -145,9 +156,10 @@ body {
   &::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
     @apply border-transparent border-b-[#454a4d] dark:border-b-[#9d9d9d];
   }
+
   /* Down */
   &::-webkit-scrollbar-button:single-button:vertical:increment {
-    border-width: 6px 6px 0 6px;
+    border-width: 8px 7px 0 8px;
     @apply border-transparent border-t-[#454a4d] dark:border-t-[#9d9d9d];
   }
 

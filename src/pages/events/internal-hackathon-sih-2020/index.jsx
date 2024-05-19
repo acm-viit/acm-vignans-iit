@@ -37,7 +37,7 @@ const InternalHackathonSIH2020 = () => {
                 organizers={{
                     org1: {
                         name: "Dept. Of CSE",
-                        link: "link1",
+                        link: "/team/dept-of-cse",
                     },
                 }}
                 event_location={{

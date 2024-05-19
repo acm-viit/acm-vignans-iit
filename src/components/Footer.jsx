@@ -4,8 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { motion } from "framer-motion";
+import { TwitterIcon, InstagramIcon, GithubIcon, LinkedInIcon, } from './Icons'
 import ACM_VIGNANS_IIT_LOGO from '../../public/asset/svg/acm-vignans-iit-logo.svg'
-import { InstagramIcon, GithubIcon, LinkedInIcon, } from './Icons'
 
 const Footer = () => {
     const router = useRouter();
@@ -23,28 +23,28 @@ const Footer = () => {
                                 <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === link ? 'w-full' : 'w-0'} dark:bg-light`}></span>
                             </div>
                         </div>
-                        <div className='flex flex-col items-center justify-center pb-5'>
-                            <Image src={ACM_VIGNANS_IIT_LOGO} alt="GDSC-VIIT" className='ml-1 w-32' />
+                        <div className='flex flex-col items-center justify-center pb-5 selector-none'>
+                            <Image src={ACM_VIGNANS_IIT_LOGO} alt="ACM-VIGNANS-IIT" className='ml-1 w-32 selector-none' />
                             <div className='flex flex-col items-center justify-center'>
                                 <div className='md:text-[20px] sm:text-[15px] lg:text-[20px] text-xl'>Association for Computing Machinery</div>
                                 <div className='lg:text-[15px] md:text-[10px] sm:text-[8px] text-xs'>Vignan&apos;s Institute of Information Technology - Visakhapatnam</div>
                             </div>
                         </div>
                         <nav className='flex items-center justify-center flex-wrap'>
-                            {/* <motion.a href="https://twitter.com" target={"_blank"}
+                            <motion.a href="https://www.facebook.com/chapteradmin" target={"_blank"}
                             className="w-6 mr-3 sm:mx-1"
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             >
                                 <TwitterIcon />
-                            </motion.a> */}
+                            </motion.a>
                             <motion.a href="#" target={"_blank"} className="w-6 mx-3 sm:mx-1"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                             >
                                 <LinkedInIcon />
                             </motion.a>
-                            <motion.a href="#" target={"_blank"} className="w-6 mx-3 mt-1 sm:mt-0 sm:mr-5 rounded-full"
+                            <motion.a href="https://www.instagram.com/acm_viit/" target={"_blank"} className="w-6 mx-3 mt-1 sm:mt-0 sm:mr-5 rounded-full"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                             >

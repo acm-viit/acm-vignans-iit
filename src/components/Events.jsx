@@ -1,6 +1,7 @@
-import React, { useRef, useState, useEffect } from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import EventCard from "@/components/EventCard";
+import React, { useRef, useState, useEffect } from "react";
 
 import SUS_HACKS from '../../public/asset/img/events/sus_hacks_april_2024/sus_hacks_april_2024_thumbnail.jpg'
 import AGRI_HACK from "../../public/asset/img/events/agri-hack/agri-hack-thumbnail.jpg";
@@ -295,7 +296,7 @@ const Events = () => {
         </div>
 
         {/* navigation arrows */}
-        <div className="controls flex items-center justify-evenly pb-10 sm:hidden">
+        <div className="controls flex items-center justify-evenly pb-10 sm:hidden selector-none">
           <motion.button
             className="control-btn prev"
             whileHover={{ scale: 1.1 }}

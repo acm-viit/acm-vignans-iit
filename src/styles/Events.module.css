@@ -41,6 +41,7 @@
   display: flex;
   align-items: center;
 }
+
 .overlay img {
   @apply max-w-[34%] max-h-full md:max-w-[80%];
   display: block;
@@ -49,7 +50,8 @@
   margin: 60px auto;
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
 }
-.overlay > span {
+
+.overlay>span {
   @apply z-10;
   @apply text-light;
   position: absolute;
@@ -59,6 +61,7 @@
   color: #ffffff;
   cursor: pointer;
 }
+
 .overlay-arrows_left {
   @apply w-[40px] h-[40px] md:w-[30px] md:h-[30px] text-light rounded-lg;
   display: flex;

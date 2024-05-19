@@ -116,17 +116,17 @@ export const InstagramIcon = ({ className, ...rest }) => (
     <radialGradient id="TGwjmZMm2W~B4yrgup6jdb" cx="18.51" cy="66.293" r="69.648"
         gradientTransform="matrix(.6435 -.7654 .5056 .4251 -26.92 52.282)"
         gradientUnits="userSpaceOnUse">
-        <stop offset=".073" stopColor="#eacc7b" />
-        <stop offset=".184" stopColor="#ecaa59" />
-        <stop offset=".307" stopColor="#ef802e" />
-        <stop offset=".358" stopColor="#ef6d3a" />
-        <stop offset=".46" stopColor="#f04b50" />
-        <stop offset=".516" stopColor="#f03e58" />
-        <stop offset=".689" stopColor="#db359e" />
-        <stop offset=".724" stopColor="#ce37a4" />
-        <stop offset=".789" stopColor="#ac3cb4" />
-        <stop offset=".877" stopColor="#7544cf" />
-        <stop offset=".98" stopColor="#2b4ff2" />
+        <stop offset=".073" stop-color="#eacc7b" />
+        <stop offset=".184" stop-color="#ecaa59" />
+        <stop offset=".307" stop-color="#ef802e" />
+        <stop offset=".358" stop-color="#ef6d3a" />
+        <stop offset=".46" stop-color="#f04b50" />
+        <stop offset=".516" stop-color="#f03e58" />
+        <stop offset=".689" stop-color="#db359e" />
+        <stop offset=".724" stop-color="#ce37a4" />
+        <stop offset=".789" stop-color="#ac3cb4" />
+        <stop offset=".877" stop-color="#7544cf" />
+        <stop offset=".98" stop-color="#2b4ff2" />
     </radialGradient>
     <path fill="url(#TGwjmZMm2W~B4yrgup6jdb)"
         d="M45,57H19c-5.5,0-10-4.5-10-10V21c0-5.5,4.5-10,10-10h26c5.5,0,10,4.5,10,10v26C55,52.5,50.5,57,45,57z" />

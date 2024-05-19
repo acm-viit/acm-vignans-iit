@@ -1,19 +1,17 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import "@/styles/Profilecard.module.css";
-// import { useRouter } from "next/router";
-import { TwitterIcon, GithubIcon, LinkedInIcon, } from "./Icons";
+import { useRouter } from "next/router";
+import { motion } from "framer-motion";
+import { TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, } from "./Icons";
+import Link from "next/link";
 
-const SimpleProfileCard = ({ href = "#", profilePic, name, className, role, twitter = "", linkedin = "", github = "", }) => {
-  // const router = useRouter();
+const SimpleProfileCard = ({ href = "#", profilePic, name, className, role, twitter = "", linkedin = "", github = "", pinterest = "", }) => {
+  const router = useRouter();
 
   return (
     <section className="flex items-center justify-center">
       <div className={`card ${className}`}>
-
-        {/* Prifle Image */}
         <div className="imgBx">
           <Image src={profilePic} alt={`${name}`} />
         </div>
@@ -21,20 +19,14 @@ const SimpleProfileCard = ({ href = "#", profilePic, name, className, role, twit
           <div className={`details !py-[30px]`}>
             <h2>
               <Link href={`${href}`}>
-
-                {/* Profile Name */}
                 <span className="relative group">
                   {name}
                   <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${href === "" ? 'w-full' : 'w-0'} dark:bg-light`}></span>
                 </span>
               </Link>
               <br />
-
-              {/* Prifle Role */}
               <p dangerouslySetInnerHTML={{ __html: role }} />
             </h2>
-
-            {/* Profile Socials */}
             <div className="pt-8 flex items-center justify-center">
               <nav className="flex items-center justify-center flex-wrap">
                 {github !== "" && (

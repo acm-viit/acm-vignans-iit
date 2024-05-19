@@ -1,20 +1,24 @@
-import MemberProfile from "@/components/MemberProfile";
 import React from "react";
+import MemberProfile from "@/components/MemberProfile";
 import saimanoj_seshagiri from '../../../public/asset/img/team/speakers/saimanoj-seshagiri.png'
+import Head from "next/head";
 
 const Speaker = () => {
   return (
     <>
-      <main className="w-[100vw] h-[100vh]">
-        <MemberProfile
-          profilePic={saimanoj_seshagiri}
-          name={`Saimanoj Seshagiri`}
-          role={`Spark AR Facilitator | GCP Enthusiast`}
-          linkedin={``}
-          github={``}
-          twitter={``}
-          about={``}
-        />
+    <Head >
+      
+    </Head>
+      <main className="flex min-h-screen flex-col items-center justify-between text-dark dark:text-light">
+          <MemberProfile 
+              profilePic={saimanoj_seshagiri}
+              name={`Saimanoj Seshagiri`}
+              role={`Spark AR Facilitator | GCP Enthusiast`}
+              linkedin={``}
+              github={``}
+              twitter={``}
+              about={``}
+          />
       </main>
     </>
   );

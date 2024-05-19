@@ -1,7 +1,7 @@
-import AnimatedText from '@/components/AnimatedText'
+import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import React from 'react'
+import AnimatedText from '@/components/AnimatedText'
 
 const Contact = () => {
   return (
@@ -14,13 +14,13 @@ const Contact = () => {
         <link rel="icon" type="image/svg" href="../../public/asset/favicon/favicon-16x16.png" sizes="16x16" />
         <link rel="apple-touch-icon" sizes="180x180" href="../../public/asset/favicon/apple-touch-icon.png" />
       </Head>
-      <main>
+      <main className='min-h-screen'>
         <AnimatedText
           text="Contact Us"
           className="mb-8 lg:!text-xl sm:mb-8 sm:!text-6xl xs:!text-4xl pt-8 flex items-center justify-center"
         />
         <div className="mb-28 mt-14 md:mt-0 ">
-          <div className="grid grid-cols-2 sm:grid-cols-1 items-center gap-16 p-8 mx-auto max-w-4xl bg-light dark:bg-dark  border sm:border-0 border-dark dark:border-light rounded-md text-dark dark:text-light font-[sans-serif]">
+          <div className="grid grid-cols-2 sm:grid-cols-1 items-center gap-16 p-8 mx-auto max-w-4xl bg-light dark:bg-dark  border sm:border-0 border-dark dark:border-light rounded-md text-dark dark:text-light">
             <div>
               <h1 className="text-xl font-extrabold">Let&apos;s Talk</h1>
               <p className="text-lg sm:text-sm text-gray-400 mt-3">Interested in speaking at our college events? Contact us—we&apos;d love to hear from you</p>
@@ -37,7 +37,7 @@ const Contact = () => {
                       </svg>
                     </div>
                     <Link href="mailto:viitacm@gmail.com" className="text-[#007bff] text-sm ml-3">
-                      <small className="block">Mail</small>
+                      <small className="block">G-mail</small>
                       <strong>viitacm@gmail.com</strong>
                     </Link>
                   </li>
@@ -47,7 +47,7 @@ const Contact = () => {
                 <h2 className="text-lg font-extrabold">Socials</h2>
                 <ul className="flex mt-3 space-x-4">
                   <li className="bg-[#e6e6e6cf] dark:bg-[#242424] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                    <Link href="#">
+                    <Link href="https://www.facebook.com/chapteradmin">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
                         viewBox="0 0 24 24">
                         <path
@@ -57,7 +57,7 @@ const Contact = () => {
                     </Link>
                   </li>
                   <li className="bg-[#e6e6e6cf] dark:bg-[#242424] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                    <Link href="#">
+                    <Link href="https://github.com/ACM-Vignans-IIT">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
                         viewBox="0 0 511 512">
                         <path
@@ -67,7 +67,7 @@ const Contact = () => {
                     </Link>
                   </li>
                   <li className="bg-[#e6e6e6cf] dark:bg-[#242424] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                    <Link href="#">
+                    <Link href="https://www.instagram.com/acm_viit/">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#007bff'
                         viewBox="0 0 24 24">
                         <path

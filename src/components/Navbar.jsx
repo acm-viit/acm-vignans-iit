@@ -72,8 +72,8 @@ const Navbar = ({ className = "" }) => {
       {/* Mobile Navbar */}
       <div className='w-full flex justify-between items-center' onClick={handlePopupClick}>
         <Link href="/">
-          <div className='flex flex-row items-center justify-center '>
-            <span className='pr-2 w-12 h-12 pt-1.5'><Image src={ACM_VIIT_LOGO} alt="GDSC-VIIT" /></span>
+          <div className='flex flex-row items-center justify-center selector-none'>
+            <span className='pr-2 w-12 h-12 pt-1.5'><Image src={ACM_VIIT_LOGO} alt="ACM-VIIT" className='selector-none' /></span>
             <div className='text-dark dark:text-light lg:flex flex-col items-start justify-center hidden'>
               <div className='text-[15px]'><span className=''>ACM</span> Vignan&apos;s IIT</div>
             </div>
@@ -121,7 +121,7 @@ const Navbar = ({ className = "" }) => {
             <nav className='flex items-center flex-col justify-center '>
               <Link href="/">
                 <div className='flex flex-col items-center justify-center'>
-                  <Image className='w-32' src={ACM_VIGNANS_IIT_LOGO} alt="GDSC-VIIT" />
+                  <Image className='w-32' src={ACM_VIGNANS_IIT_LOGO} alt="ACM-VIIT" />
                   <div className='text-light dark:text-dark flex flex-col items-center justify-center'>
                     <div className='md:text-[20px] sm:text-[15px] xs:text-[12px] lg:text-[20px]'>Association for Computing Machinery</div>
                     <div className='lg:text-[15px] md:text-[10px] sm:text-[8px] xs:text-[6px]'>Vignan&apos;s Institute of Information Technology - Visakhapatnam</div>
@@ -135,7 +135,7 @@ const Navbar = ({ className = "" }) => {
             </nav>
 
             <nav className='flex items-center justify-center flex-wrap mt-2'>
-              <motion.a href="https://github.com/ACM-Vignans-IIT" target={"_blank"} className="w-6 mx-3 sm:mx-1"
+              <motion.a href="https://www.facebook.com/chapteradmin" target={"_blank"} className="w-6 mx-3 sm:mx-1"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -147,7 +147,7 @@ const Navbar = ({ className = "" }) => {
               >
                 <GithubIcon />
               </motion.a>
-              <motion.a href="https://github.com/ACM-Vignans-IIT" target={"_blank"}
+              <motion.a href="https://www.instagram.com/acm_viit/" target={"_blank"}
                 className="w-6 mr-3 sm:mx-1"
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}

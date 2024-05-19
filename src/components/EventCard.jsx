@@ -11,6 +11,8 @@ const EventCard = ({ link, title, eventdate, featuredImage, description, rsvp, c
 
   return (
     <div className={`relative flex-shrink-0 block sm:w-[20rem] w-[28rem] sm:h-[20rem] h-[25rem] sm:mr-0 mb-16  rounded-lg shadow-2xl border border-solid border-dark bg-light dark:border-light dark:bg-dark ${className}`}>
+      {/* <span className="absolute inset-0 lg:border-4 border-2 border-blue-500 border-dashed rounded-lg"></span> */}
+      {/* <div className="relative flex flex-col h-full w-full rounded-lg group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"> */}
       <div className="relative flex flex-col h-full w-full rounded-lg">
         <div className="overflow-hidden rounded-t-lg bg-blue-500 flex-shrink-0 border-blue-500 border-b-4 ">
           <Link href={link} target=''>
@@ -37,6 +39,10 @@ const EventCard = ({ link, title, eventdate, featuredImage, description, rsvp, c
             <p className="mt-2 text-xs font-bold text-gray-500 dark:text-gray-400">{eventdate}</p>
             <p className="mt-2 text-base sm:text-sm text-gray-500 dark:text-gray-400 line-clamp-2">{description}</p>
           </div>
+          {/* <div className="flex justify-between items-center">
+              <Link href={link} target='_blank' className="font-semibold text-sm hover:border-b-2 hover:border-solid border-dark dark:border-light">Read more</Link>
+              <Link href={rsvp} target="_blank" className="btn btn-blue">RSVP Now</Link>
+            </div> */}
         </div>
       </div>
     </div>

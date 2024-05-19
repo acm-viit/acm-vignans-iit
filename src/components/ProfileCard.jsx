@@ -1,47 +1,37 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 import "@/styles/Profilecard.module.css";
-import { TwitterIcon, GithubIcon, LinkedInIcon, } from "./Icons";
+import { TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, } from "./Icons";
+import Link from "next/link";
 
-const ProfileCard = ({ href = "#", profilePic, name, className, role, twitter, linkedin, github, }) => {
+const ProfileCard = ({ href = "#", profilePic, name, className, role, twitter, linkedin, github, pinterest, }) => {
   const router = useRouter();
 
   return (
     <section className="flex items-center justify-center">
       <div className={`card ${className}`}>
-
-        {/* Profile Image */}
         <div className="imgBx">
-          <Image src={profilePic} alt={`${name}`} />
+          <Image src={profilePic} alt={`${name}`} className=" selector-none" />
         </div>
-
-        {/* Profile Details */}
         <div className="content">
           <div className={`details`}>
             <h2>
               <Link href={`${href}`}>
-
-                {/* Profile Name */}
                 <span className="relative group">
                   {name}
                   <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'} dark:bg-light`}></span>
                 </span>
               </Link>
               <br />
-
-              {/* Profile role */}
               <p>{role}</p>
             </h2>
-
-            {/* Profiel Socials */}
             <div className="pt-8 flex items-center justify-center">
               <nav className="flex items-center justify-center flex-wrap">
                 <motion.a
                   href={github}
-                  target={"_blank"}
+                  target="_blank"
                   className="w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark"
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
@@ -50,7 +40,7 @@ const ProfileCard = ({ href = "#", profilePic, name, className, role, twitter, l
                 </motion.a>
                 <motion.a
                   href={linkedin}
-                  target={"_blank"}
+                  target="_blank"
                   className="w-6 mx-3 sm:mx-1"
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}
@@ -59,7 +49,7 @@ const ProfileCard = ({ href = "#", profilePic, name, className, role, twitter, l
                 </motion.a>
                 <motion.a
                   href={twitter}
-                  target={"_blank"}
+                  target="_blank"
                   className="w-6 mx-3 sm:mx-1 rounded-full"
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.9 }}

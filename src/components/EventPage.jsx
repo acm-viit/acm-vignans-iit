@@ -107,7 +107,7 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
             {/* Event Thumbnail Image */}
             <div className="">
               <Image
-                className="flex flex-col items-center justify-center w-[90%] lg:w-full rounded-lg shadow-2xl border border-solid border-dark dark:border-light "
+                className="flex flex-col items-center justify-center w-[90%] lg:w-full rounded-lg shadow-2xl border border-solid border-dark dark:border-light selector-none"
                 src={thumbnail}
                 alt={title}
                 title={title}
@@ -129,7 +129,6 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
                 </div>
               </div>
             </div>
-
 
             <div>
               {/* Event Title */}
@@ -197,7 +196,6 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
                 </div>
               </div>
 
-
               {/* Event Registration Closed */}
               {registration_closed && (
                 <div className="py-4 md:text-sm sm:text-sm">
@@ -214,7 +212,6 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
                   </div>
                 </div>
               )}
-
 
               {/* Event Registration Link */}
               {registration_available && (
@@ -247,7 +244,6 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
                   </div>
                 </div>)}
 
-
               {/* Event Description */}
               <div className="pt-4 flex flex-col items-start ">
                 <span className="font-semibold">About Event</span>
@@ -259,7 +255,6 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
               </div>
             </div>
           </div>
-
 
           {/* Event Profile Cards */}
           {Object.keys(profile_cards).length > 0 && (
@@ -280,7 +275,6 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
               </div>
             </div>
           )}
-
 
           {/* Event Winners Gallary */}
           {Object.keys(winners_gallary).length > 0 && (
@@ -304,7 +298,6 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
               </div>
             </div>
           )}
-
 
           {/* Event Photo Gallary */}
           <div className="">

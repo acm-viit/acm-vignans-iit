@@ -231,7 +231,7 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
 
                       </div>
                       <div className="flex items-center justify-center pb-1">
-                        <Link href={registration_link} target="_blank" className='button__hover_border mt-6 mr-8 text-xs font-semibold border border-solid border-dark dark:border-light rounded-full'>
+                        <Link href={registration_link} target="_blank" className='button__hover_border mt-6 text-xs font-semibold border border-solid border-dark dark:border-light rounded-full'>
                           <button className="full-rounded !px-20 lg:!px-12 lg:!py-3"
                           >
                             <span>Register to Join</span>
@@ -240,7 +240,7 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
                       </div>
                       {download_template && download_template.template_name && (
                         <div className="flex items-center justify-center pt-1">
-                          <Link  href={download_template.template_link} target="_blank" className='button__hover_border mt-2 mr-8 text-xs font-semibold border border-solid border-dark dark:border-light rounded-full'>
+                          <Link  href={download_template.template_link} target="_blank" className='button__hover_border mt-2 text-xs font-semibold border border-solid border-dark dark:border-light rounded-full'>
                           <button className="full-rounded !px-12 lg:!px-4 lg:!py-3"
                           >
                             <span>{download_template.template_name}</span>

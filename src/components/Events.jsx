@@ -106,7 +106,7 @@ const Events = () => {
             />
             <div className="flex items-center justify-center relative flex-shrink-0 sm:w-[20rem] w-[28rem] sm:h-[20rem] h-[25rem] sm:mr-0 mb-16  rounded-lg shadow-[3px_2px_0px_0px_rgba(24,24,24)] dark:shadow-[3px_2px_0px_0px_rgba(255,255,255)] border border-solid border-dark bg-light dark:border-light dark:bg-dark">
               <div className="grid">
-                <a href="/events/"
+                <Link href="/events/"
                   className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
                   rel="noopener noreferrer"
                 >
@@ -119,7 +119,7 @@ const Events = () => {
                   <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
                     Experience fun events and make new friends!
                   </p>
-                </a>
+                </Link>
               </div>
             </div>
             {/* <EventCard

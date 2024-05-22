@@ -19,7 +19,7 @@ const NotFound = () => {
                     <div className="container flex items-center justify-center lg:flex-col lg:gap-20 gap-[28rem]">
                         <div className=' order-1 lg:order-2'>
                             <span className="text-2xl">Error 404</span>
-                            <p className="mt-4">We can't seem to find the page <br /> you are looking for.</p>
+                            <p className="mt-4">We can&apos;t seem to find the page <br /> you are looking for.</p>
                             {/* <button className="inline-block mt-6 mr-8 bg-dark/85 dark:bg-light text-white dark:text-dark dark:font-semibold  px-6 py-2 rounded-full"
                                 onClick={() => history.back()}
                             >

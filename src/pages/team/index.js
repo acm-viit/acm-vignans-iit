@@ -2,7 +2,6 @@ import Head from "next/head";
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Navbar from "../../../test/NavbarHeader";
 import Events from "@/components/Events";
 import gsap from "gsap";
 import "@/styles/Hero.module.css";

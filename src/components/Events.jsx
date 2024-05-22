@@ -31,6 +31,7 @@ import hour_of_code from "../../public/asset/img/events/hour_of_code/hour_of_cod
 import hack_arena from "../../public/asset/img/events/hack_arena/hack_arena_thumbnail.png";
 import code_battle from "../../public/asset/img/events/code_battle/code_battle_thumbnail.png";
 import acm_inaugural from "../../public/asset/img/events/acm_inaugural/acm_inaugural_thumbnail.jpg";
+import Link from "next/link";
 
 
 

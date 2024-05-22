@@ -12,18 +12,15 @@ const SimpleProfileCard = ({ href = "#", profilePic, name, className, role, twit
   return (
     <section className="flex items-center justify-center">
       <div className={`card ${className}`}>
-        <div className="imgBx">
+        <div className="imgBx !rounded-full">
           <Image src={profilePic} alt={`${name}`} />
         </div>
         <div className="content">
           <div className={`details !py-[30px]`}>
             <h2>
-              <Link href={`${href}`}>
                 <span className="relative group">
                   {name}
-                  <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${href === "" ? 'w-full' : 'w-0'} dark:bg-light`}></span>
                 </span>
-              </Link>
               <br />
               <p dangerouslySetInnerHTML={{ __html: role }} />
             </h2>

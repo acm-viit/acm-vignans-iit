@@ -231,13 +231,21 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
 
                       </div>
                       <div className="flex items-center justify-center pb-1">
-                        <Link className=" w-[70%] xl:w-[90%] md:w-[90%]" href={registration_link} target="_blank"><h1 className="p-1 px-6 cursor-pointer bg-blue-500 hover:bg-blue-600 transition-all duration-300 ease-in-out rounded-xl text-light font-bold flex items-center justify-center">Register to Join</h1></Link>
+                        <Link href={registration_link} target="_blank" className='button__hover_border mt-6 mr-8 text-xs font-semibold border border-solid border-dark dark:border-light rounded-full'>
+                          <button className="full-rounded !px-20 lg:!px-12 lg:!py-3"
+                          >
+                            <span>Register to Join</span>
+                          </button>
+                        </Link>
                       </div>
                       {download_template && download_template.template_name && (
                         <div className="flex items-center justify-center pt-1">
-                          <Link className=" w-[70%] xl:w-[90%] md:w-[90%]" href={download_template.template_link} target="_blank"><h1 className="p-1 px-6 cursor-pointer bg-purple-500 hover:bg-purple-600 transition-all duration-300 ease-in-out rounded-xl text-light font-bold flex items-center justify-center">
-                            {download_template.template_name}
-                          </h1></Link>
+                          <Link  href={download_template.template_link} target="_blank" className='button__hover_border mt-2 mr-8 text-xs font-semibold border border-solid border-dark dark:border-light rounded-full'>
+                          <button className="full-rounded !px-12 lg:!px-4 lg:!py-3"
+                          >
+                            <span>{download_template.template_name}</span>
+                          </button>
+                        </Link>
                         </div>
                       )}
                     </div>

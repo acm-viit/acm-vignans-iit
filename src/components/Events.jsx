@@ -61,13 +61,9 @@ const Events = () => {
   return (
     <>
       <section className="container px-28 sm:px-8">
-        {/* <div className="recent-events-wrapper px-8">
-          <Image src={RecentEvents} className="recent-events" />
-        </div> */}
-
         {/* event card carousel */}
-        <div className=" relative mt-2">
-          <div className="carousel" ref={carouselRef}>
+        <div className="relative mt-2">
+          <div className="carousel whiskey-cards alignfull" ref={carouselRef}>
             <EventCard
               className={`mr-6 ml-2`}
               link="/events/sus-hacks-2024"
@@ -108,7 +104,25 @@ const Events = () => {
               eventdate={"Feb 22, 2022"}
               description="Ideathon is an intensive brainstorming event conducted by ACM VIGNAN on 28th Feb 2022, to give an opportunity to talented minds to generate fresh solutions to existing challenges in the community."
             />
-            <EventCard
+            <div className="flex items-center justify-center relative flex-shrink-0 sm:w-[20rem] w-[28rem] sm:h-[20rem] h-[25rem] sm:mr-0 mb-16  rounded-lg shadow-[3px_2px_0px_0px_rgba(24,24,24)] dark:shadow-[3px_2px_0px_0px_rgba(255,255,255)] border border-solid border-dark bg-light dark:border-light dark:bg-dark">
+              <div className="grid">
+                <a href="/events/"
+                  className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                  rel="noopener noreferrer"
+                >
+                  <h2 className={`mb-3 text-2xl font-semibold`}>
+                    More Events{" "}
+                    <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                    &rarr;
+                    </span>
+                  </h2>
+                  <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+                    Experience fun events and make new friends!
+                  </p>
+                </a>
+              </div>
+            </div>
+            {/* <EventCard
               className={`mr-6`}
               link="/events/github-workshop"
               title="Github Workshop"
@@ -291,7 +305,7 @@ const Events = () => {
               eventdate={"Apr 27, 2018"}
               featuredImage={acm_inaugural}
               description="Vignan's IIT ACM Student Chapter has been inaugurated on 1st Sep 2018, Vision is to focus on various technical and cultural fields with the main goal of enriching the student's career and driving it forward through conferences and student development events and committees all the while maintaining the highest professional and ethical standards."
-            />
+            /> */}
           </div>
         </div>
 
@@ -303,7 +317,6 @@ const Events = () => {
             whileTap={{ scale: 0.9 }}
             onClick={handlePrevClick}
           >
-            {/* <Image src={leftarrow} alt="Previous" /> */}
             <span class="text-7xl inline-block transform rotate-180">➤</span>
           </motion.button>
 
@@ -313,7 +326,6 @@ const Events = () => {
             whileTap={{ scale: 0.9 }}
             onClick={handleNextClick}
           >
-            {/* <Image src={rightarrow} alt="Next" /> */}
             <span className="text-7xl">➤</span>
           </motion.button>
         </div>

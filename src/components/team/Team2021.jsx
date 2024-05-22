@@ -47,6 +47,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                         className={`w-[400px] sm:w-[350px]`}
                     />
                     <ProfileCard
@@ -57,6 +58,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                         className={`w-[400px] sm:w-[350px]`}
                     />
                 </div>
@@ -69,6 +71,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                         className={`w-[400px] sm:w-[350px]`}
                     />
                 </div>
@@ -81,6 +84,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -90,6 +94,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -99,6 +104,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
                 <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 items-center px-80 sm:px-0">
@@ -110,6 +116,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
                 <div>
@@ -124,6 +131,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -133,6 +141,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -142,10 +151,11 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
 
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-40 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-[24rem] sm:px-0">
                     <ProfileCard
                         href="#"
                         profilePic={sai_praneeth_talluri}
@@ -154,6 +164,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -163,6 +174,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
                 <div>
@@ -177,6 +189,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -186,6 +199,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -195,6 +209,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
                 {/* <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 items-center px-80 sm:px-0">
@@ -211,6 +226,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -220,6 +236,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="/team/mohith-vishal"
@@ -229,9 +246,10 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-40 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-[24rem] sm:px-0">
 
                     <ProfileCard
                         href="#"
@@ -241,6 +259,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -250,12 +269,13 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
                 <div>
                     <h1 className="flex items-center justify-center font-bold text-3xl pt-8 pb-14 md:text-xl">Social Media Team</h1>
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-40 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-[24rem] sm:px-0">
                     <ProfileCard
                         href="#"
                         profilePic={annadata_alekhya}
@@ -264,6 +284,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -273,12 +294,13 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
                 <div>
                     <h1 className="flex items-center justify-center font-bold text-3xl pt-8 pb-14 md:text-xl">Public Speaker&apos;s Team</h1>
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-40 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-[24rem] sm:px-0">
                     <ProfileCard
                         href="#"
                         profilePic={yashaswi_kandregula}
@@ -287,6 +309,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -296,6 +319,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
                 <div>
@@ -310,6 +334,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -319,6 +344,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="#"
@@ -328,6 +354,7 @@ const Team2021 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
             </div>

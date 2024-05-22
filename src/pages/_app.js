@@ -3,11 +3,12 @@ import React, { useEffect } from 'react';
 import Head from "next/head";
 import "@/styles/globals.css";
 import { Inter, Quicksand } from "next/font/google"
-import Navbar from "@/components/Navbar";
+import NavbarUpdate from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScrollUp from "@/components/utils/ScrollUp";
 import SaveScroll from '@/components/hooks/SaveScroll';
 import RestoreScroll from '@/components/hooks/RestoreScroll';
+import { AnimatePresence } from 'framer-motion'
 // import '../styles/globals.css';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -38,8 +39,10 @@ export default function App({ Component, pageProps }) {
         {/* {showNavbar && <Navbar />} */}
         <SaveScroll />
         <RestoreScroll />
-        <Navbar className='' />
-        <Component {...pageProps} />
+        <NavbarUpdate className='' />
+        <AnimatePresence mode="wait">
+          <Component {...pageProps} />
+        </AnimatePresence>
         <ScrollUp />
         <Footer />
       </main>

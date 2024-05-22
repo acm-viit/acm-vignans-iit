@@ -10,7 +10,7 @@ import manasvi_ramana_sai from '../../../public/asset/img/teams/2024/manasvi_ram
 import sharmila_bheemisetty from '../../../public/asset/img/teams/2024/sharmila_bheemisetty.jpg'
 import basa_vaishnavi from '../../../public/asset/img/teams/2024/basa_vaishnavi.jpg'
 import gautam_ankoji from '../../../public/asset/img/teams/2024/gautam_ankoji.png'
-import k_hari_charan from '../../../public/asset/img/teams/2024/k_hari_charan.png'
+import k_hari_charan from '../../../public/asset/img/teams/2024/k_hari_charan.jpeg'
 import jagruthi_kotana from '../../../public/asset/img/teams/2024/jagruthi_kotana.jpg'
 import k_s_k_koushik from '../../../public/asset/img/teams/2024/k_s_k_koushik.png'
 import k_satya_narayana from '../../../public/asset/img/teams/2024/k_satya_narayana.jpg'
@@ -22,7 +22,7 @@ import mohith_vishal from '../../../public/asset/img/teams/2024/mohith_vishal.jp
 import nehal_fathema from '../../../public/asset/img/teams/2024/nehal_fathema.jpg'
 import amrutha_rokkam from '../../../public/asset/img/teams/2024/amrutha_rokkam.jpg'
 import t_krishna_sasank from '../../../public/asset/img/teams/2024/t_krishna_sasank.jpg'
-import v_b_rakesh from '../../../public/asset/img/teams/2024/v_b_rakesh.png'
+import v_b_rakesh from '../../../public/asset/img/teams/2024/v_b_rakesh.jpg'
 
 const Team2024 = () => {
     return (
@@ -42,15 +42,16 @@ const Team2024 = () => {
                         github={``}
                         twitter={``}
                         className={`w-[400px] sm:w-[350px]`}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
-                        href="/team/k-hari-charan/"
+                        href="/team/hari-charan-kandregula/"
                         profilePic={k_hari_charan}
-                        name={`K. Hari Charan`}
-                        role={`Chair`}
-                        linkedin={``}
-                        github={``}
-                        twitter={``}
+                        name={`Hari Charan Kandregula`}
+                        role={`Chairperson`}
+                        linkedin={`https://in.linkedin.com/in/haricharan0310`}
+                        github={`https://github.com/Haricharan0310`}
+                        twitter={`https://twitter.com/haricharan0310`}
                         className={`w-[400px] sm:w-[350px]`}
                     />
                 </div>
@@ -59,7 +60,7 @@ const Team2024 = () => {
                         href="/team/tatavarty-s-s-krishna-sasank/"
                         profilePic={t_krishna_sasank}
                         name={`Tatavarty S. S. Krishna Sasank`}
-                        role={`Vice Chair`}
+                        role={`Vice Chairperson`}
                         linkedin={`https://linkedin.com/in/krishna-sasank-5212a5256`}
                         github={`https://github.com/krishna-sasank9`}
                         twitter={``}
@@ -75,6 +76,7 @@ const Team2024 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="/team/abdul-rafay/"
@@ -84,6 +86,7 @@ const Team2024 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="/team/mohith_vishal/"
@@ -118,6 +121,7 @@ const Team2024 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="/team/gautam-ankoji/"
@@ -138,7 +142,7 @@ const Team2024 = () => {
                         twitter={`https://x.com/Satya2844`}
                     />
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-80 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-[24rem] sm:px-0">
                     <ProfileCard
                         href="/team/b-m-ramana-sai/"
                         profilePic={manasvi_ramana_sai}
@@ -170,6 +174,7 @@ const Team2024 = () => {
                         linkedin={``}
                         github={``}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
                         href="/team/nehal-fathema/"
@@ -179,15 +184,15 @@ const Team2024 = () => {
                         linkedin={`https://www.linkedin.com/in/nehal-fathema`}
                         github={`https://github.com/nehal-5`}
                         twitter={`https://x.com/fathema_nehal`}
-                    />
+                    />  
                     <ProfileCard
                         href="/team/rakesh-vajrapu/"
                         profilePic={v_b_rakesh}
                         name={`Rakesh Vajrapu`}
                         role={`Content Writer`}
-                        linkedin={``}
-                        github={``}
-                        twitter={``}
+                        linkedin={`https://www.linkedin.com/in/rakeshvajrapu/`}
+                        github={`https://github.com/rakesh-vajrapu`}
+                        twitter={`https://twitter.com/rakesh_vajrapu`}
                     />
                 </div>
                 {/* <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 items-center px-80 sm:px-0">
@@ -195,7 +200,7 @@ const Team2024 = () => {
                 <div>
                     <h1 className="flex items-center justify-center font-bold text-3xl pt-8 pb-14 md:text-xl">Event Management Team</h1>
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 gap-4 items-center px-80 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-[24rem] sm:px-0">
                     <ProfileCard
                         href="/team/abhinav-bnvs/"
                         profilePic={abhinav_bathina}
@@ -218,7 +223,7 @@ const Team2024 = () => {
                 <div>
                     <h1 className="flex items-center justify-center font-bold text-3xl pt-8 pb-14 md:text-xl">Public Speaker&apos;s Team</h1>
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-80 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-[24rem] sm:px-0">
                     <ProfileCard
                         href="/team/vaishnavi-basa/"
                         profilePic={basa_vaishnavi}
@@ -241,7 +246,7 @@ const Team2024 = () => {
                 <div>
                     <h1 className="flex items-center justify-center font-bold text-3xl pt-8 pb-14 md:text-xl">Special Interest Team</h1>
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-80 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-[24rem] sm:px-0">
                     <ProfileCard
                         href="/team/jagruthi-kotana/"
                         profilePic={jagruthi_kotana}

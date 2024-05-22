@@ -47,7 +47,7 @@ const FeaturedEvent = ({ type, link, title, description, img, linkedin, instagra
     <>
       <main
         className="w-[70rem] sm:w-full flex items-center justify-between relative rounded-br-2xl
-        rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-[#242424] shadow-2xl p-6
+        rounded-3xl border border-solid border-dark dark:border-light bg-light dark:bg-[#242424] shadow-[5px_5px_0px_0px_rgba(24,24,24)] dark:shadow-[5px_5px_0px_0px_rgba(255,255,255)] p-6
         lg:flex-col lg:p-4 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 text-dark dark:text-light overflow-hidden
         "
       >
@@ -68,7 +68,7 @@ const FeaturedEvent = ({ type, link, title, description, img, linkedin, instagra
           />
         </Link>
         <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-          <span className="text-primary dark:text-secondary font-medium text-xl xs:text-base">
+          <span className="text-primary dark:text-secondary font-semibold text-xl xs:text-base">
             {type}
           </span>
           <Link
@@ -161,8 +161,8 @@ const Events = () => {
       </Head>
       <section className="container px-14 sm:px-8 pb-20">
         <AnimatedText
-          text="Recent Events"
-          className="mb-8 lg:!text-xl sm:mb-8 sm:!text-6xl xs:!text-4xl pt-4 flex items-center justify-center"
+          text="ACM Vignan's IIT Events"
+          className="mb-8 lg:!text-xl sm:mb-8 sm:!text-4xl xs:!text-3xl pt-8 flex items-center justify-center"
         />
 
         {/* Featured Event */}
@@ -249,7 +249,7 @@ const Events = () => {
               description="Webhack 2021 is a college-level initiative to provide students a platform to solve some of the UI problems, thus inculcating a culture of product innovation and a mindset of problem-solving."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/roadmap-to-dsa-coding-ninjas"
               title="Roadmap To DSA And Introduction To Competitive Programming"
               eventdate={"Sep 04, 2021"}
@@ -257,7 +257,7 @@ const Events = () => {
               description="Give your career a head-start and learn how you can get closer to your dream job by refining your coding skills. Coding Ninjas, in collaboration with Vignan's IIT ACM Student Chapter, brings you an exclusive webinar on Roadmap to DSA and Introduction to Competitive Programming."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/talks-on-placements-preparation"
               title="Talks On Placement Preparation"
               eventdate={"Jul 31, 2021"}
@@ -265,7 +265,7 @@ const Events = () => {
               description="It's quite common for final year and pre-final year students to be worried about placements. Placement fears are real, and students are often confused about how to start the preparation and from where to start, ending up taking the wrong steps."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/xbhitech-2021"
               title="Xbhitech 2021"
               eventdate={"Sep 14, 2021"}
@@ -273,7 +273,7 @@ const Events = () => {
               description="XHIBITECH 2021, conducted by Vignan’s IIT ACM, is a Three-day Tech Carnival where candidates showcase their projects, including mini-projects and individual projects, that they have worked on so far."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/techalthon"
               title="Techalthon"
               eventdate={"Jun 30, 2021"}
@@ -281,7 +281,7 @@ const Events = () => {
               description="TECHATHLON is a technical quiz conducted by Vignan's IIT ACM student chapter, with participation from students across all years and various departments within the Vignan group."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/ethical-hacking-2-0"
               title="Ethical Hacking 2.0"
               eventdate={"Jun 06, 2021"}
@@ -289,7 +289,7 @@ const Events = () => {
               description="Ethical Hacking 2.0 is a workshop conducted by Vignan's IIT, mentored by Lakshmi Narayana Degala, a Top 300 rank hacker on Intigriti."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/viit-ctf-v3"
               title="VIIT CTF V3"
               eventdate={"May 29, 2021"}
@@ -297,7 +297,7 @@ const Events = () => {
               description="VIIT CTF V3 is a beginner-level CTF/Hackathon for cybersecurity enthusiasts. This CTF is a 24-hour event, CTF is aimed to improve the student's cybersecurity and problem-solving skills. CTF tones a beginner to an expert. VIIT CTF V3 successfully reached 1300+ registrations over all Vignan groups."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/apskill-workshop"
               title="Android Application Development"
               eventdate={"Apr 09, 2021"}
@@ -305,7 +305,7 @@ const Events = () => {
               description="In this Workshop, Students learned the basics of building Android apps with the Kotlin programming language."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/personal-profile-development"
               title="Professional Profile Development"
               eventdate={"Mar 20, 2021"}
@@ -313,7 +313,7 @@ const Events = () => {
               description="Professional Profile development is an On-Campus workshop conducted by ACM Vignan, wherein our beloved seniors turned into our mentors and provided us with tips and tricks that are really useful for the students' success story."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/vignite-2-0"
               title="Vignite 2.0"
               eventdate={"Feb 26, 2021"}
@@ -321,7 +321,7 @@ const Events = () => {
               description="V-IGNITE 2.0 HACKATHON is a 24-Hour Hack-day event organized by ACM Vignan on 26-27 February 2021 respectively."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/ideathon-feb-2021"
               title="Ideathon Feb 2021"
               eventdate={"Feb 26, 2021"}
@@ -329,7 +329,7 @@ const Events = () => {
               description="IDEATHON is a Nationwide On-Campus Contest conducted by ACM Vignan on the 26th and 27th of February 2021. For this event, we invited various company CEOs and officials from around the city to come and grace the event."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/cloud-computing"
               title="Android Application Development"
               eventdate={"Jan 07, 2021"}
@@ -337,7 +337,7 @@ const Events = () => {
               description="As a part of the ACM student chapter Vignan's IIT, We organized an event on Cloud Support, The key speaker for this event is LAKSHMI PRASANNA AKKENA who is a highly expert IT professional with more than 15 years of experience in Cloud Technology and E-Business Suite Applications."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/viit-ctf-v2"
               title="VIIT CTF V2"
               eventdate={"May 30, 2019"}
@@ -345,7 +345,7 @@ const Events = () => {
               description="VIIT CTF V2 Cyber Securuity Hackathon"
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/internal-hackathon-sih-2020"
               title="Internal Hackathon SIH 2020"
               eventdate={"Jan 09, 2020"}
@@ -353,7 +353,7 @@ const Events = () => {
               description="Vignan's IIT ACM Student Chapter participated in organizing the internal hackathon of SIH 2020 under the guidelines of SIH."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/ethical-hacking"
               title="Ethical Hacking Session"
               eventdate={"Aug 05, 2019"}
@@ -361,7 +361,7 @@ const Events = () => {
               description="As a part of the ACM student chapter at Vignan's IIT, we organized an Ethical Hacking session on 5th Aug 2019. The session described how Ethical Hackers expose vulnerabilities in software to help business owners fix those security holes before a malicious hacker discovers them."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/vignite-1-0"
               title="Vignite 1.0"
               eventdate={"Sep 15, 2019"}
@@ -369,7 +369,7 @@ const Events = () => {
               description="V-IGNITE is a nationwide initiative to provide students with a platform to solve pressing problems in our daily lives, fostering a culture of product innovation and problem-solving mindset."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/hour-of-code"
               title="Hour Of Code 2018"
               eventdate={"Dec 07, 2018"}
@@ -377,7 +377,7 @@ const Events = () => {
               description="As a part of the ACM student chapter at Vignan's IIT, we organized the Hour of Code event on 07th Dec 2018. This event was dedicated to the global movement about programming and technology in the current world scenario."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/hack-arena"
               title="Hack Arena"
               eventdate={"Dec 06, 2018"}
@@ -385,7 +385,7 @@ const Events = () => {
               description="As a part of the ACM student chapter at Vignan's IIT, we organized the HACK ARENA event on 07th Dec 2018. This event involved solving a problem statement based on a real-life scenario."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/code-battle"
               title="Code Battle"
               eventdate={"Jan 06, 2018"}
@@ -393,7 +393,7 @@ const Events = () => {
               description="Coding Event held on HACKEREARTH Platform. Conducted by Vignan's IIT ACM."
             />
             <EventCard
-              className={`mr-0`}
+              className={`mx-3 sm:mx-0`}
               link="/events/acm-inaugural-2018"
               title="ACM Inagural 2018"
               eventdate={"Apr 27, 2018"}

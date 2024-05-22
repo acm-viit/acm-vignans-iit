@@ -6,26 +6,26 @@ import "@/styles/Profilecard.module.css";
 import { TwitterIcon, DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, } from "./Icons";
 import Link from "next/link";
 
-const ProfileCard = ({ href = "#", profilePic, name, className, role, twitter, linkedin, github, pinterest, }) => {
+const ProfileCard = ({ href = "#", profilePic, name, className, role, twitter, linkedin, github, pinterest, imgBxClassName }) => {
   const router = useRouter();
 
   return (
     <section className="flex items-center justify-center">
       <div className={`card ${className}`}>
-        <div className="imgBx">
+        <div className={`imgBx ${imgBxClassName}`}>
           <Image src={profilePic} alt={`${name}`} className=" selector-none" />
         </div>
         <div className="content">
           <div className={`details`}>
             <h2>
               <Link href={`${href}`}>
-                <span className="relative group">
+                <span className="relative group font-bold">
                   {name}
                   <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'} dark:bg-light`}></span>
                 </span>
               </Link>
               <br />
-              <p>{role}</p>
+              <p className="font-semibold">{role}</p>
             </h2>
             <div className="pt-8 flex items-center justify-center">
               <nav className="flex items-center justify-center flex-wrap">

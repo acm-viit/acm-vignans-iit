@@ -11,6 +11,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
 
 /* custom css */
 @import url("./Buttons.module.css");
@@ -18,9 +19,14 @@
 @import url("./Hero.module.css");
 @import url("./Profilecard.module.css");
 @import url("./ProfileAboutSection.module.css");
+@import url("./Header.module.css");
 
 .font-poppins {
   font-family: "Poppins", sans-serif;
+}
+
+.font-rammetto-one {
+  font-family: "Rammetto One", sans-serif;
 }
 
 .font-product-sans {
@@ -47,52 +53,6 @@
   font-style: normal;
 }
 
-.dark,
-.theme-transition {
-  transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-.selector-none {
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-}
-
-::selection {
-  @apply bg-dark dark:bg-light text-light dark:text-dark;
-  /* color: black;
-  background: white; */
-  text-shadow: 1px 1px 2px #008cff;
-  outline: 2px solid rgb(54, 115, 255);
-  caret-color: rgb(32, 19, 23);
-}
-
-::-moz-selection {
-  @apply bg-dark dark:bg-light text-light dark:text-dark;
-  /* color: black;
-  background: white; */
-  text-shadow: 1px 1px 2px rgba(0, 119, 255, 0.5);
-  outline: 2px solid rgb(54, 115, 255);
-  caret-color: rgb(32, 19, 23);
-}
-
-::-webkit-selection {
-  @apply bg-dark dark:bg-light text-light dark:text-dark;
-  /* color: black;
-  background: white; */
-  text-shadow: 1px 1px 2px rgba(0, 119, 255, 0.5);
-  outline: 2px solid rgb(54, 115, 255);
-  caret-color: rgb(32, 19, 23);
-}
-
-main {
-  transition: 0.5s;
-  @apply bg-light dark:bg-dark;
-}
-
 body {
   overflow-x: hidden;
   transition: 0.5s;
@@ -102,18 +62,18 @@ body {
 
   /* scrollbar */
   &::-webkit-scrollbar {
-    transition: 0.5s;
-    @apply w-[14px] h-1;
+    transition: background-color 0.5s;
+    @apply w-[14px] h-1 theme-transition;
   }
 
   &::-webkit-scrollbar-track {
     @apply dark:bg-[#202324] bg-[#f1f1f1] px-10;
-    /* @apply bg-white; */
+    transition: background-color 0.5s;
   }
 
   &::-webkit-scrollbar-track-piece {
     @apply dark:bg-dark bg-light;
-    transition: 0.5s;
+    transition: background-color 0.5s;
   }
 
   &::-webkit-scrollbar-corner {
@@ -166,4 +126,64 @@ body {
   &::-webkit-scrollbar-button:vertical:single-button:increment:hover {
     @apply border-transparent border-t-[#454a4d] dark:border-t-[#9d9d9d];
   }
+}
+
+.dark,
+.theme-transition {
+  @apply bg-light dark:bg-dark text-dark dark:text-light;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.selector-none {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+::selection {
+  @apply bg-dark dark:bg-light text-light dark:text-dark;
+  /* color: black;
+  background: white; */
+  text-shadow: 1px 1px 2px #008cff;
+  outline: 2px solid rgb(54, 115, 255);
+  caret-color: rgb(32, 19, 23);
+}
+
+::-moz-selection {
+  @apply bg-dark dark:bg-light text-light dark:text-dark;
+  /* color: black;
+  background: white; */
+  text-shadow: 1px 1px 2px rgba(0, 119, 255, 0.5);
+  outline: 2px solid rgb(54, 115, 255);
+  caret-color: rgb(32, 19, 23);
+}
+
+::-webkit-selection {
+  @apply bg-dark dark:bg-light text-light dark:text-dark;
+  /* color: black;
+  background: white; */
+  text-shadow: 1px 1px 2px rgba(0, 119, 255, 0.5);
+  outline: 2px solid rgb(54, 115, 255);
+  caret-color: rgb(32, 19, 23);
+}
+
+main {
+  transition: 0.5s;
+  @apply bg-light dark:bg-dark;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1.8s infinite;
 }

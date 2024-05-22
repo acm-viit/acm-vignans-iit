@@ -9,6 +9,7 @@ import IntroText from "@/components/IntroText";
 import AnimatedText from "@/components/AnimatedText";
 import Team2024 from "@/components/team/Team2024";
 import ACM_VIIT from '../../public/asset/svg/acm-viit-2024.svg'
+import HomePageLoader from "@/components/utils/HomePageLoader";
 
 export default function Home() {
   // const navbarRef = useRef(null);
@@ -42,6 +43,7 @@ export default function Home() {
       <Head>
         <title>ACM Vignan&apos;s IIT | Association for Computing Machinery Vignan&apos;s Institute of Information Technology - Visakhapatnam</title>
       </Head>
+      <HomePageLoader />
       <main className="text-dark dark:text-light">
         <div
           ref={headerRef}
@@ -53,15 +55,15 @@ export default function Home() {
           <IntroText className="h1 !mx-1 !px-0 text-[5rem]" text={`Deploy`} />
           {/* <IntroText className="h1 !mx-1 !px-0 text-[5rem]" text={`Inovate Inspire Build Deploy`} /> */}
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-1 px-40 lg:px-14 items-center justify-center align-middle">
+        <div className="grid grid-cols-2 lg:grid-cols-1 px-40 lg:px-14 items-center justify-center align-middle overflow-hidden">
           <div
             ref={heroRef1}
-            className="hero !border-0 !border-transparent w-[60%] sm:w-[100%]"
+            className="hero lg:pt-7 !border-0 !border-transparent w-[60%] sm:w-[100%]"
           >
             <Image
               src={ACM_VIIT}
               alt="acm-viit"
-              className="rounded-lg !px-0 pt-14 lg:pt-0 selector-none"
+              className="rounded-lg !px-0 pt-4 lg:pt-0 selector-none"
             />
           </div>
           <div ref={heroRef2} className=" sm:p-4">
@@ -90,7 +92,7 @@ export default function Home() {
             </div> */}
           </div>
         </div>
-        <div ref={heroRef3} className="pt-20 sm:pt-10">
+        <div className="pt-20 sm:pt-10">
           <AnimatedText
             text="Recent Events"
             className="mb-16 lg:!text-2xl sm:mb-8 sm:!text-xl xs:!text-xl pt-16 flex items-center justify-center"

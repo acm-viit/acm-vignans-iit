@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: "#1b1b1b",
+        dark: "#181818",
         light: "#ffffff",
         primary: "#B63E96", // 240,86,199
         secondary: "#58E6D9", // 80,230,217
@@ -48,6 +48,9 @@ module.exports = {
 
       xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }
+      
+      xl1: { max: "1115px" },
+      // => @media (max-width: 1115px) { ... }
 
       lg: { max: "1023px" },
       // => @media (max-width: 1023px) { ... }

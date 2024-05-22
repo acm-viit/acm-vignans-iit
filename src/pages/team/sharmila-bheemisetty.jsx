@@ -17,7 +17,7 @@ const Member = () => {
                         ☯ Hi, I'm Sharmila
                         <br>
                         ☯ I have skills in:
-                        <code>Competitive Programming</code> | <code>MERN Stack Development</code> | <code>Flask Development</code> | <code>SQL</code>
+                        Competitive Programming | MERN Stack Development | Flask Development | SQL
                         <br>
                         ☯ Currently, I'm expanding my knowledge in Python libraries for development and I'm eager to learn more.
                         <br>

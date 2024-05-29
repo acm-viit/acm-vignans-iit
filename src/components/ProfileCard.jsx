@@ -10,11 +10,13 @@ const ProfileCard = ({ href = "#", profilePic, name, className, role, twitter, l
   const router = useRouter();
 
   return (
-    <section className="flex items-center justify-center">
+    <section className="flex items-center justify-center mx-auto">
       <div className={`card ${className}`}>
-        <div className={`imgBx ${imgBxClassName}`}>
-          <Image src={profilePic} alt={`${name}`} className=" selector-none" />
-        </div>
+        <Link href={`${href}`}>
+          <div className={`imgBx ${imgBxClassName}`}>
+            <Image src={profilePic} alt={`${name}`} className=" selector-none" />
+          </div>
+        </Link>
         <div className="content">
           <div className={`details`}>
             <h2>
@@ -27,7 +29,7 @@ const ProfileCard = ({ href = "#", profilePic, name, className, role, twitter, l
               <br />
               <p className="font-semibold">{role}</p>
             </h2>
-            <div className="pt-8 flex items-center justify-center">
+            <div className="pt-2 flex items-center justify-center">
               <nav className="flex items-center justify-center flex-wrap">
                 <motion.a
                   href={github}

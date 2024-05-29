@@ -32,7 +32,7 @@ const IntroText = ({ text, className = "" }) => {
     return (
         <div className='overflow-hidden py-4'>
             <motion.h1
-                className={`text-dark font-bold capitalize text-[100px] xl:text-6xl lg:text-6xl md:text-4xl sm:text-2xl xs:text-xl dark:text-light ${className}`}
+                className={`text-dark font-bold capitalize text-[100px]  2xl:text-6xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl dark:text-light ${className}`}
                 variants={quote}
                 initial="initial"
                 animate="animate"

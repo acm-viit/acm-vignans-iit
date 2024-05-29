@@ -33,7 +33,7 @@ const MemberProfile = ({ name, profilePic, role, about = "", github = "", linked
         <meta name="twitter:image" content={profilePic} />
       </Head>
       <main className="p-8 flex flex-col items-center justify-center">
-        <div className="flex items-center justify-center text-5xl md:text-4xl sm:text-3xl pb-8 font-semibold">
+        <div className="flex items-center justify-center text-5xl md:text-4xl sm:text-3xl pb-8 font-semibold text-center">
           {name}
         </div>
 

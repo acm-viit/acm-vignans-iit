@@ -12,10 +12,10 @@ const Calander = ({ month = "", date = "" }) => {
   return (
     <div className="w-10">
       <div className="flex flex-col items-center justify-center border-[0.1px] border-solid border-[#e8e8e8] dark:border-[#363636] text-[#6b6b6b] dark:text-[#d3d3d3] rounded-lg overflow-hidden">
-        <div className="text-[10px] bg-[#e8e8e8] dark:bg-[#363636] rounded-t-lg -light px-2 p-[2px] font-semibold uppercase">
+        <div className="text-[10px] bg-[#e8e8e8] dark:bg-[#363636] w-full text-center font-semibold uppercase">
           {month}
         </div>
-        <div className="text-sm font-bold">{date}</div>
+        <div className="text-sm font-bold py-[3px]">{date}</div>
       </div>
     </div>
   );
@@ -39,6 +39,7 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
   const [clickedImg, setClickedImg] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
 
+  const defaultProfileImage = '/asset/img/teams/others/default_profile.svg';
 
   // Lightbox left and right clicks
   const handleClick = (photoKey, index) => {
@@ -100,12 +101,12 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={thumbnail} />
       </Head>
-      <main className="text-dark dark:text-light bg-light dark:bg-dark">
+      <main className="text-dark dark:text-light bg-light dark:bg-dark min-h-screen">
         <Layout className="pt-8 lg:!pt-2">
           <div className="grid grid-cols-2 lg:grid-cols-1">
 
             {/* Event Thumbnail Image */}
-            <div className="">
+            <div className="mt-4">
               <Image
                 className="flex flex-col items-center justify-center w-[90%] lg:w-full rounded-lg shadow-2xl border border-solid border-dark dark:border-light selector-none"
                 src={thumbnail}
@@ -114,18 +115,33 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
               />
               <div className="pt-4 lg:pt-2 sm:pt-0 lg:pl-2 lg:text-sm md:text-sm sm:text-[14px] xs:text-[8px] lg:hidden text-[#2b2b2b] dark:text-[#cbcbcb] ">
                 <div className="font-semibold capitalize pb-2">
-                  Hosted by:
-                  <div className="pt-1 w-[6rem] border-b-[0.5px] border-solid border-[#6b6b6b] dark:border-[#d3d3d3]"></div>
+                  {/* Hosted by: */}
+                  Organizers:
+                  {/* <div className="pt-1 w-[6rem] border-b-[0.5px] border-solid border-[#6b6b6b] dark:border-[#d3d3d3]"></div> */}
                 </div>
                 <div className="lg:pt-0 ">
-                  {Object.keys(organizers).map((key, index) => (
-                    <div key={index} className="pl-2 pb-2 font-semibold">
-                      <Link href={organizers[key].link} className="group relative">
-                        {organizers[key].name}
-                        <span className="h-[1px] bg-dark dark:bg-light absolute left-0 bottom-0 w-0 transition-all duration-300 group-hover:w-full"></span>
-                      </Link>
-                    </div>
-                  ))}
+                  {Object.keys(organizers).map((key, index) => {
+                    const profileImage = organizers[key].profile
+                      ? `/asset/img/teams/others/${organizers[key].profile}`
+                      : defaultProfileImage;
+
+                    return (
+                      <div key={index} className="pl-2 pb-2 font-semibold">
+                        <Link href={organizers[key].link} className="group relative">
+                          <span className="flex items-center">
+                            <Image
+                              src={profileImage}
+                              width={20}
+                              height={20}
+                              alt={`${organizers[key].name} Profile Picture`}
+                              className="rounded-full mr-2"
+                            />
+                            {organizers[key].name}
+                          </span>
+                        </Link>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -137,20 +153,35 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
               </h1>
 
               {/* List of Hosts */}
-              <div className="hidden lg:flex lg:text-sm sm:text-sm text-[#2b2b2b] dark:text-[#cbcbcb] ">
+              <div className="hidden lg:flex lg:flex-col lg:text-sm sm:text-sm text-[#2b2b2b] dark:text-[#cbcbcb] ">
                 <div className="font-semibold capitalize text-[#2b2b2b] dark:text-[#cbcbcb] ">
-                  Hosted by:
-                  <div className=" w-[6rem] border-b-[0.5px] border-solid border-[#6b6b6b] dark:border-[#d3d3d3] lg:hidden"></div>
+                  {/* Hosted by: */}
+                  Organizers:
+                  {/* <div className=" w-[6rem] border-b-[0.5px] border-solid border-[#6b6b6b] dark:border-[#d3d3d3] lg:hidden"></div> */}
                 </div>
-                <div className="lg:pt-0 line-clamp-1">
-                  {Object.keys(organizers).map((key, index) => (
-                    <div key={index} className="pl-2 pb-2 font-semibold">
-                      <Link href={organizers[key].link} className="group relative">
-                        {organizers[key].name}
-                        <span className="h-[1px] bg-dark dark:bg-light absolute left-0 bottom-0 w-0 transition-all duration-300 group-hover:w-full"></span>
-                      </Link>
-                    </div>
-                  ))}
+                <div className="lg:pt-2">
+                  {Object.keys(organizers).map((key, index) => {
+                    const profileImage = organizers[key].profile
+                      ? `/asset/img/teams/others/${organizers[key].profile}`
+                      : defaultProfileImage;
+
+                    return (
+                      <div key={index} className="pl-2 pb-2 font-semibold">
+                        <Link href={organizers[key].link} className="group relative">
+                          <span className="flex items-center">
+                            <Image
+                              src={profileImage}
+                              width={20}
+                              height={20}
+                              alt={`${organizers[key].name} Profile Picture`}
+                              className="rounded-full mr-2"
+                            />
+                            {organizers[key].name}
+                          </span>
+                        </Link>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -240,12 +271,12 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
                       </div>
                       {download_template && download_template.template_name && (
                         <div className="flex items-center justify-center pt-1">
-                          <Link  href={download_template.template_link} target="_blank" className='button__hover_border mt-2 text-xs font-semibold border border-solid border-dark dark:border-light rounded-full'>
-                          <button className="full-rounded !px-12 lg:!px-4 lg:!py-3"
-                          >
-                            <span>{download_template.template_name}</span>
-                          </button>
-                        </Link>
+                          <Link href={download_template.template_link} target="_blank" className='button__hover_border mt-2 text-xs font-semibold border border-solid border-dark dark:border-light rounded-full'>
+                            <button className="full-rounded !px-12 lg:!px-4 lg:!py-3"
+                            >
+                              <span>{download_template.template_name}</span>
+                            </button>
+                          </Link>
                         </div>
                       )}
                     </div>
@@ -254,8 +285,8 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
 
               {/* Event Description */}
               <div className="pt-4 flex flex-col items-start ">
-                <span className="font-semibold">About Event</span>
-                <div className=" w-[80%] mt-1 border-b-[0.5px] border-solid border-[#6b6b6b] dark:border-[#d3d3d3] md:w-full"></div>
+                <span className="font-semibold uppercase">About Event</span>
+                <div className=" w-[16%] mt-1 border-b-[0.5px] border-solid border-[#6b6b6b] dark:border-[#d3d3d3] md:w-[34%]"></div>
                 <div
                   className="pt-4 sm:text-sm "
                   dangerouslySetInnerHTML={{ __html: description }}

@@ -1,7 +1,7 @@
 .card {
     @apply sm:w-[300px] w-[350px] dark:bg-[#242424] bg-light rounded-3xl;
     position: absolute;
-    height: 190px;
+    height: 210px;
     /* height: 450px; */
     /* background: #fff; */
     /* border-radius: 8px; */
@@ -9,9 +9,9 @@
     transition: 0.5s;
 }
 
-.card:hover {
+/* .card:hover {
     height: 400px;
-}
+} */
 
 .imgBx {
     @apply dark:bg-dark bg-opacity-35 bg-light rounded-3xl;
@@ -29,11 +29,11 @@
     z-index: 5;
 }
 
-.card:hover .imgBx {
+/* .card:hover .imgBx {
     @apply z-10;
     width: 250px;
     height: 250px;
-}
+} */
 
 .imgBx img {
     /* @apply rounded-full; */
@@ -62,12 +62,12 @@
     text-align: center;
     width: 100%;
     transition: 0.5s;
-    transform: translateY(80px);
+    transform: translateY(20px);
 }
-
+/* 
 .card:hover .content .details {
     transform: translateY(0px);
-}
+} */
 
 .card .content .details h2 {
     @apply text-[#323232] dark:text-light;

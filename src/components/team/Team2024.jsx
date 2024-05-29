@@ -30,9 +30,9 @@ const Team2024 = () => {
             <div className="container mx-auto mb-20 px-8">
                 <AnimatedText
                     text="Meet the Team of 2024"
-                    className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-2xl xs:!text-xl py-8 flex items-center justify-center"
+                    className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-2xl pt-16 flex items-center justify-center"
                 />
-                <div className="grid grid-cols-2 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 items-center px-80 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-80 2xl:px-40 sm:px-0">
                     <ProfileCard
                         href="/team/mr-b-dinesh-reddy/"
                         profilePic={mr_b_dinesh_reddy}
@@ -55,7 +55,7 @@ const Team2024 = () => {
                         className={`w-[400px] sm:w-[350px]`}
                     />
                 </div>
-                <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 items-center px-80 sm:px-0">
+                <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-80 sm:px-0">
                     <ProfileCard
                         href="/team/tatavarty-s-s-krishna-sasank/"
                         profilePic={t_krishna_sasank}
@@ -67,7 +67,7 @@ const Team2024 = () => {
                         className={`w-[400px] sm:w-[350px]`}
                     />
                 </div>
-                <div className="grid grid-cols-3 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-40 sm:px-0">
+                <div className="grid grid-cols-3 2xl:grid-cols-3 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-40 2xl:px-20 sm:px-0">
                     <ProfileCard
                         href="/team/k-yaswanth/"
                         profilePic={k_yaswanth}
@@ -98,7 +98,7 @@ const Team2024 = () => {
                         twitter={``}
                     />
                 </div>
-                <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 items-center px-80 sm:px-0">
+                <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-80 sm:px-0">
                     <ProfileCard
                         href="/team/kancherla-sri-vishnu/"
                         profilePic={kancherla_sri_vishnu}
@@ -110,9 +110,9 @@ const Team2024 = () => {
                     />
                 </div>
                 <div>
-                    <h1 className="flex items-center justify-center font-bold text-3xl pt-8 pb-14 md:text-xl">Technology Team</h1>
+                    <h1 className="flex items-center justify-center font-bold text-5xl pt-8 pb-14 md:text-3xl">Technology Team</h1>
                 </div>
-                <div className="grid grid-cols-3 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-40 sm:px-0">
+                <div className="grid grid-cols-3 2xl:grid-cols-3 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-40 2xl:px-20 sm:px-0">
                     <ProfileCard
                         href="/team/k-s-k-koushik/"
                         profilePic={k_s_k_koushik}
@@ -142,7 +142,7 @@ const Team2024 = () => {
                         twitter={`https://x.com/Satya2844`}
                     />
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-[24rem] sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-[24rem] 2xl:px-40 sm:px-0">
                     <ProfileCard
                         href="/team/b-m-ramana-sai/"
                         profilePic={manasvi_ramana_sai}
@@ -163,9 +163,9 @@ const Team2024 = () => {
                     />
                 </div>
                 <div>
-                    <h1 className="flex items-center justify-center font-bold text-3xl pt-8 pb-14 md:text-xl">Editorial Team</h1>
+                    <h1 className="flex items-center justify-center font-bold text-5xl pt-8 pb-14 md:text-3xl">Editorial Team</h1>
                 </div>
-                <div className="grid grid-cols-3 2xl:grid-cols-2 md:grid-cols-1 gap-4 items-center px-40 sm:px-0">
+                <div className="grid grid-cols-3 2xl:grid-cols-3 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-40 2xl:px-20 sm:px-0">
                     <ProfileCard
                         href="/team/k-srujan/"
                         profilePic={k_srujan}
@@ -195,12 +195,12 @@ const Team2024 = () => {
                         twitter={`https://twitter.com/rakesh_vajrapu`}
                     />
                 </div>
-                {/* <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 items-center px-80 sm:px-0">
+                {/* <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-80 sm:px-0">
                 </div> */}
                 <div>
-                    <h1 className="flex items-center justify-center font-bold text-3xl pt-8 pb-14 md:text-xl">Event Management Team</h1>
+                    <h1 className="flex items-center justify-center font-bold text-5xl pt-8 pb-14 md:text-3xl">Event Management Team</h1>
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-[24rem] sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-[24rem] 2xl:px-40 sm:px-0">
                     <ProfileCard
                         href="/team/abhinav-bnvs/"
                         profilePic={abhinav_bathina}
@@ -221,9 +221,9 @@ const Team2024 = () => {
                     />
                 </div>
                 <div>
-                    <h1 className="flex items-center justify-center font-bold text-3xl pt-8 pb-14 md:text-xl">Public Speaker&apos;s Team</h1>
+                    <h1 className="flex items-center justify-center font-bold text-5xl pt-8 pb-14 md:text-3xl">Public Speaker&apos;s Team</h1>
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-[24rem] sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-[24rem] 2xl:px-40 sm:px-0">
                     <ProfileCard
                         href="/team/vaishnavi-basa/"
                         profilePic={basa_vaishnavi}
@@ -244,9 +244,11 @@ const Team2024 = () => {
                     />
                 </div>
                 <div>
-                    <h1 className="flex items-center justify-center font-bold text-3xl pt-8 pb-14 md:text-xl">Special Interest Team</h1>
+                    <h1 className="flex items-center justify-center font-bold text-5xl pt-8 pb-14 md:text-3xl">Special Interest Team</h1>
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-4 items-center px-[24rem] sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-[24rem] 2xl:px-40 sm:px-0
+                
+                ">
                     <ProfileCard
                         href="/team/jagruthi-kotana/"
                         profilePic={jagruthi_kotana}

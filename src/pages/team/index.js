@@ -39,7 +39,7 @@ export default function TeamMembers() {
         <link rel="icon" type="image/svg" href="../../public/asset/favicon/favicon-16x16.png" sizes="16x16" />
         <link rel="apple-touch-icon" sizes="180x180" href="../../public/asset/favicon/apple-touch-icon.png" />
       </Head>
-      <main className="text-dark dark:text-light w-full h-full">
+      <main className="text-dark dark:text-light w-full h-full mt-2">
         {/* <AnimatedText
           text="Meet the Team of 2023"
           className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl pt-16 flex items-center justify-center"

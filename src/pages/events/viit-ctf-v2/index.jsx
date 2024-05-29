@@ -16,8 +16,9 @@ const CodeBattle = () => {
         thumbnail={VII_CTF_V2}
         organizers={{
             org1: {
-                name: "Dept. Of CSE",
+                name: "CSE Department",
                 link: "/team/dept-of-cse",
+                profile: "vignan_logo.png",
             },
         }}
         event_location={{

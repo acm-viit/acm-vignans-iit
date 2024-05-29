@@ -50,8 +50,9 @@ const Ideathon2022 = () => {
                 thumbnail={IDEATHON_2022}
                 organizers={{
                     org1: {
-                        name: "Dept. Of CSE",
+                        name: "CSE Department",
                         link: "/team/dept-of-cse",
+                        profile: "vignan_logo.png",
                     },
                 }}
                 event_location={{

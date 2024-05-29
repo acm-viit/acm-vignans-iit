@@ -39,7 +39,7 @@ export default function ScrollButton() {
       </button> */}
       <button 
         onClick={scrollUp}
-        className={`button ${ show ? "opacity-100 translate-y-0" : "" } fixed bottom-5 right-3 rounded-full w-8 h-8 outline-none border-none opacity-0 translate-y-2 transition-all duration-300 cursor-pointer p-0 grid place-items-center`}
+        className={`button ${ show ? "opacity-100 translate-y-0" : "" } fixed bottom-5 right-3 rounded-full w-8 h-8 outline-none border-none opacity-0 translate-y-2 lg:translate-y-3 transition-all duration-300 cursor-pointer p-0 grid place-items-center`}
         aria-label="Scroll Up"
       >
         <svg className="svgIcon" viewBox="0 0 384 512">

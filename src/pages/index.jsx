@@ -1,15 +1,15 @@
+import gsap from "gsap";
 import Head from "next/head";
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import gsap from "gsap";
 import Events from "@/components/Events";
 import IntroText from "@/components/IntroText";
-import AnimatedText from "@/components/AnimatedText";
+import React, { useEffect, useRef } from "react";
 import Team2024 from "@/components/team/Team2024";
-import ACM_VIIT from '../../public/asset/svg/acm-viit-2024.svg'
+import AnimatedText from "@/components/AnimatedText";
 import HomePageLoader from "@/components/utils/HomePageLoader";
+import ACM_VIIT from '../../public/asset/svg/acm-viit-2024.svg';
 
 export default function Home() {
   // const navbarRef = useRef(null);
@@ -47,7 +47,7 @@ export default function Home() {
       <main className="text-dark dark:text-light">
         <div
           ref={headerRef}
-          className="sm:py-4 font-bold flex items-start justify-between p-0 px-40 lg:px-8 pt-8 pb-20 selector-none"
+          className="sm:py-4 font-bold flex items-start justify-between p-0 px-40 lg:px-8 pt-8 pb-10 selector-none"
         >
           <IntroText className="h1 !mx-1 !px-0 text-[5rem]" text={`Inovate`} />
           <IntroText className="h1 !mx-1 !px-0 text-[5rem]" text={`Inspire`} />
@@ -95,7 +95,7 @@ export default function Home() {
         <div className="pt-20 sm:pt-10">
           <AnimatedText
             text="Recent Events"
-            className="mb-16 lg:!text-2xl sm:mb-8 sm:!text-xl xs:!text-xl pt-16 flex items-center justify-center"
+            className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-4xl pt-16 flex items-center justify-center"
           />
           <Events />
           {/* <IntroText

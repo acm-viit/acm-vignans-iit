@@ -61,8 +61,9 @@ const Vignite_3_0 = () => {
                 thumbnail={VIGNITE_3_0}
                 organizers={{
                     org1: {
-                        name: "Dept. Of CSE",
+                        name: "CSE Department",
                         link: "/team/dept-of-cse",
+                        profile: "vignan_logo.png",
                     },
                 }}
                 event_location={{

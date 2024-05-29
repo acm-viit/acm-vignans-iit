@@ -20,7 +20,7 @@ const Teams = () => {
 
                     <nav className="mb-2 flex justify-center space-x-4 text-sm" aria-label="Tabs" role="tablist">
                         <motion.button
-                            className={`focus:outline-none px-[12px] p-[2px] rounded-full ${activeTab === '2024' ? 'active bg-dark/85 dark:bg-light dark:text-dark text-light font-semibold' : 'bg-gray-200 dark:bg-light/15 text-gray-700 dark:text-light'}`}
+                            className={`px-[12px] p-[2px] rounded-full ${activeTab === '2024' ? 'active bg-dark/85 dark:bg-light dark:text-dark text-light font-semibold' : 'bg-gray-200 dark:bg-light/15 text-gray-700 dark:text-light'}`}
                             onClick={() => handleTabChange('2024')}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -29,7 +29,7 @@ const Teams = () => {
                             2024
                         </motion.button>
                         <motion.button
-                            className={`focus:outline-none px-[12px] p-[2px] rounded-full ${activeTab === '2021' ? 'active bg-dark/85 dark:bg-light dark:text-dark text-light font-semibold' : 'bg-gray-200 dark:bg-light/15 text-gray-700 dark:text-light'}`}
+                            className={`px-[12px] p-[2px] rounded-full ${activeTab === '2021' ? 'active bg-dark/85 dark:bg-light dark:text-dark text-light font-semibold' : 'bg-gray-200 dark:bg-light/15 text-gray-700 dark:text-light'}`}
                             onClick={() => handleTabChange('2021')}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

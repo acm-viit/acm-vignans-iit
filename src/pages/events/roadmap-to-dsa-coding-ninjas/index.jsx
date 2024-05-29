@@ -25,11 +25,11 @@ const RoadmapToDSACodingNinjas = () => {
                 organizers={{
                     org1: {
                         name: "Swapnil Kumar",
-                        link: "link1",
+                        link: "#",
                     },
                     org2: {
                         name: "Rajat Goel",
-                        link: "link2",
+                        link: "#",
                     },
                 }}
                 event_location={{

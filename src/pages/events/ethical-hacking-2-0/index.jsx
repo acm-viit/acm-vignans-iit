@@ -39,6 +39,7 @@ const EthicalHacking2 = () => {
                     org1: {
                         name: "Lakshmi Narayana Degala",
                         link: "https://app.intigriti.com/profile/0xdln",
+                        profile: "default_profile.svg",
                     },
                 }}
                 event_location={{

@@ -1,34 +1,34 @@
 import React from 'react'
 import { motion } from "framer-motion"
 
-const quote = {
-    initial: {
-        opacity: 1,
-    },
-    animate: {
-        opacity: 1,
-        transition: {
-            delay: 0.5,
-            staggerChildren: 0.08,
+
+const IntroText = ({ text, className = "", delayTime }) => {
+    const quote = {
+        initial: {
+            opacity: 1,
+        },
+        animate: {
+            opacity: 1,
+            transition: {
+                delay: 0,
+                staggerChildren: 0.08,
+            }
         }
     }
-}
-
-const singleWord = {
-    initial: {
-        opacity: 0,
-        y: 50,
-    },
-    animate: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.8
+    
+    const singleWord = {
+        initial: {
+            opacity: 0,
+            y: 50,
+        },
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: delayTime
+            }
         }
     }
-}
-
-const IntroText = ({ text, className = "" }) => {
     return (
         <div className='overflow-hidden py-4'>
             <motion.h1

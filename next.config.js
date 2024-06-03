@@ -1,12 +1,14 @@
-/** @type {import('next').NextConfig} */
+const path = require('path');
+const { withContentlayer } = require('next-contentlayer');
+
 const nextConfig = {
   reactStrictMode: true,
-}
-
-const path = require('path')
- 
-module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
-}
+  compiler: {
+    removeConsole: true,
+  },
+};
+
+module.exports = withContentlayer(nextConfig);

@@ -12,9 +12,23 @@ module.exports = {
         light: "#ffffff",
         primary: "#B63E96", // 240,86,199
         secondary: "#58E6D9", // 80,230,217
+        accent: "#7B00D3",
+        accentDark: "#ffdb4d",
+        // gray: "#747474",
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
+        roll: "roll 24s linear infinite",
+      },
+      fontFamily:{
+        mr: ["var(--font-mr)"],
+        in: ["var(--font-in)"],
+      },
+      keyframes:{
+        roll:{
+          "0%": {transform: "translateX(100%)"},
+          "100%": {transform: "translateX(-100%)"}
+        }
       },
       backgroundImage: {
         circularLight:
@@ -48,7 +62,7 @@ module.exports = {
 
       xl: { max: "1279px" },
       // => @media (max-width: 1279px) { ... }
-      
+
       xl1: { max: "1115px" },
       // => @media (max-width: 1115px) { ... }
 
@@ -61,10 +75,16 @@ module.exports = {
       sm: { max: "639px" },
       // => @media (max-width: 639px) { ... }
 
+      // sxl: "1180px",
+      //   // @media (min-width: 1180px){...}
+
       xs: { max: "479px" },
       // => @media (max-width: 479px) { ... }
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
 }
 

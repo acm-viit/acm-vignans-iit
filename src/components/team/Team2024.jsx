@@ -22,7 +22,7 @@ import mohith_vishal from '../../../public/asset/img/teams/2024/mohith_vishal.jp
 import nehal_fathema from '../../../public/asset/img/teams/2024/nehal_fathema.jpg'
 import amrutha_rokkam from '../../../public/asset/img/teams/2024/amrutha_rokkam.jpg'
 import t_krishna_sasank from '../../../public/asset/img/teams/2024/t_krishna_sasank.jpg'
-import v_b_rakesh from '../../../public/asset/img/teams/2024/v_b_rakesh.jpg'
+import rakesh_vajrapu from '../../../public/asset/img/teams/2024/rakesh_vajrapu.jpg'
 
 const Team2024 = () => {
     return (
@@ -187,7 +187,7 @@ const Team2024 = () => {
                     />  
                     <ProfileCard
                         href="/team/rakesh-vajrapu/"
-                        profilePic={v_b_rakesh}
+                        profilePic={rakesh_vajrapu}
                         name={`Rakesh Vajrapu`}
                         role={`Content Writer`}
                         linkedin={`https://www.linkedin.com/in/rakeshvajrapu/`}

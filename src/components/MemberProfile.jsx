@@ -80,7 +80,7 @@ const MemberProfile = ({ name, profilePic, role, about = "", github = "", linked
 
           </nav>
         </div>
-        <div className="flex items-center justify-center pt-4 pl-2">{role}</div>
+        <div className="flex items-center justify-center pt-4 pl-2 text-center">{role}</div>
         {/* <ProfileCard /> */}
 
         {/* About */}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const useThemeSwitcher = () => {
-    const preferDarkQuery = "(prefers-color-scheme: light)";
+    const preferDarkQuery = "(prefers-color-scheme: dark)";
     const [mode, setMode] = useState("");
 
     useEffect(() => {
@@ -29,15 +29,18 @@ const useThemeSwitcher = () => {
 
     useEffect(() => {
         if (mode === "dark") {
-            window.localStorage.setItem("theme", "dark");
             document.documentElement.classList.add("dark");
         } else {
-            window.localStorage.setItem("theme", "light");
             document.documentElement.classList.remove("dark");
         }
     }, [mode]);
 
-    return [mode, setMode];
+    const setTheme = (newMode) => {
+        window.localStorage.setItem("theme", newMode);
+        setMode(newMode);
+    };
+
+    return [mode, setTheme];
 };
 
 export default useThemeSwitcher;

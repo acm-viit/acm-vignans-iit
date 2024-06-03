@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <div>
             <footer className='w-full border-t-[0.5px] border-solid border-t-dark/45  dark:border-t-light/45 font-medium text-lg dark:text-light sm:text-base'>
-                <Layout className='!py-10 flex flex-col lg:flex-col dark:!bg-[#242424]'>
+                <Layout className='!py-10 flex flex-col lg:flex-col dark:!bg-[#242424] '>
                     <div className='flex xl:flex-col items-start xl:items-center justify-between 2xl:justify-around'>
                         <div className='flex flex-col items-center justify-center pb-5 selector-none'>
                             <Image src={ACM_VIGNANS_IIT_LOGO} alt="ACM-VIGNANS-IIT" className='ml-1 w-32 selector-none' />
@@ -70,6 +70,11 @@ const Footer = () => {
                                     </div>
                                     <div>
                                         <ul>
+                                            <li>
+                                                <a href="/articles/" className="dropdown__link lg:line-clamp-1">
+                                                    Articles
+                                                </a>
+                                            </li>
                                             <li>
                                                 <a href="/articles/html-for-beginners/" className="dropdown__link lg:line-clamp-1">
                                                     HTML for beginners

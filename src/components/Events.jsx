@@ -8,29 +8,29 @@ import AGRI_HACK from "../../public/asset/img/events/agri-hack/agri-hack-thumbna
 import vignite_3_0 from "../../public/asset/img/events/vignite_3_0/vignite_3_0_thumbnail.jpg";
 import ideathon_june_2022 from "../../public/asset/img/events/ideathon_june_2022/ideathon_june_2022_thumbnail.jpg";
 import ideathon_feb_2022 from "../../public/asset/img/events/ideathon_feb_2022/ideathon_feb_2022_thumbnail.png";
-import github_workshop from "../../public/asset/img/events/github_workshop/github_workshop_thumbnail.png";
-import hands_on_with_jenkins from "../../public/asset/img/events/hands_on_with_jenkins/hands_on_with_jenkins_thumbnail.png";
-import hour_of_code_2021 from "../../public/asset/img/events/hour_of_code_2021/hour_of_code_2021_thumbnail.png";
-import webhack_2021 from "../../public/asset/img/events/webhack_2021/webhack_2021_thumbnail.jpg";
-import roadmap_to_dsa_coding_ninjas from "../../public/asset/img/events/roadmap_to_dsa_coding_ninjas/roadmap_to_dsa_cn_thumbnail.jpg";
-import talks_on_placements_preparation from "../../public/asset/img/events/talks_on_placements_preparation/talks_on_placements_preparation_thumbnail.jpg";
-import xbhitech_2021 from "../../public/asset/img/events/xbhitech_2021/xbhitech_2021_thumbnail.png";
-import techalthon from "../../public/asset/img/events/techalthon/techalthon_thumbnail.png";
-import ethical_hacking_2_0 from "../../public/asset/img/events/ethical_hacking_2_0/ethical_hacking_2_0_thumbnail.png";
-import viit_ctf_v3 from "../../public/asset/img/events/viit_ctf_v3/viit_ctf_v3_thumbnail.jpg";
-import apskill_workshop from "../../public/asset/img/events/apskill_workshop/apskill_thumbnail.jpg";
-import personal_profile_development from "../../public/asset/img/events/personal_profile_development/personal_profile_development_thumbnail.jpg";
-import vignite_2_0 from "../../public/asset/img/events/vignite_2_0/vignite_2_0_thumbnail.jpg";
-import ideathon_feb_2021 from "../../public/asset/img/events/ideathon_feb_2021/ideathon_feb_2021_thumbnail.jpg";
-import cloud_computing from "../../public/asset/img/events/cloud_computing/cloud_computing_thumbnail.jpg";
-import viit_ctf_v2 from "../../public/asset/img/events/viit_ctf_v2/viit_ctf_v2_thumbnail.jpg";
-import internal_hackathon_sih_2020 from "../../public/asset/img/events/internal_hackathon_sih_2020/internal_hackathon_sih_2020_thumbnail.jpg";
-import ethical_hacking from "../../public/asset/img/events/ethical_hacking/ethical_hacking_thumbnail.png";
-import vignite_1_0 from "../../public/asset/img/events/vignite_1_0/vignite_1_0_thumbnail.jpg";
-import hour_of_code from "../../public/asset/img/events/hour_of_code/hour_of_code_thumbnail.png";
-import hack_arena from "../../public/asset/img/events/hack_arena/hack_arena_thumbnail.png";
-import code_battle from "../../public/asset/img/events/code_battle/code_battle_thumbnail.png";
-import acm_inaugural from "../../public/asset/img/events/acm_inaugural/acm_inaugural_thumbnail.jpg";
+// import github_workshop from "../../public/asset/img/events/github_workshop/github_workshop_thumbnail.png";
+// import hands_on_with_jenkins from "../../public/asset/img/events/hands_on_with_jenkins/hands_on_with_jenkins_thumbnail.png";
+// import hour_of_code_2021 from "../../public/asset/img/events/hour_of_code_2021/hour_of_code_2021_thumbnail.png";
+// import webhack_2021 from "../../public/asset/img/events/webhack_2021/webhack_2021_thumbnail.jpg";
+// import roadmap_to_dsa_coding_ninjas from "../../public/asset/img/events/roadmap_to_dsa_coding_ninjas/roadmap_to_dsa_cn_thumbnail.jpg";
+// import talks_on_placements_preparation from "../../public/asset/img/events/talks_on_placements_preparation/talks_on_placements_preparation_thumbnail.jpg";
+// import xbhitech_2021 from "../../public/asset/img/events/xbhitech_2021/xbhitech_2021_thumbnail.png";
+// import techalthon from "../../public/asset/img/events/techalthon/techalthon_thumbnail.png";
+// import ethical_hacking_2_0 from "../../public/asset/img/events/ethical_hacking_2_0/ethical_hacking_2_0_thumbnail.png";
+// import viit_ctf_v3 from "../../public/asset/img/events/viit_ctf_v3/viit_ctf_v3_thumbnail.jpg";
+// import apskill_workshop from "../../public/asset/img/events/apskill_workshop/apskill_thumbnail.jpg";
+// import personal_profile_development from "../../public/asset/img/events/personal_profile_development/personal_profile_development_thumbnail.jpg";
+// import vignite_2_0 from "../../public/asset/img/events/vignite_2_0/vignite_2_0_thumbnail.jpg";
+// import ideathon_feb_2021 from "../../public/asset/img/events/ideathon_feb_2021/ideathon_feb_2021_thumbnail.jpg";
+// import cloud_computing from "../../public/asset/img/events/cloud_computing/cloud_computing_thumbnail.jpg";
+// import viit_ctf_v2 from "../../public/asset/img/events/viit_ctf_v2/viit_ctf_v2_thumbnail.jpg";
+// import internal_hackathon_sih_2020 from "../../public/asset/img/events/internal_hackathon_sih_2020/internal_hackathon_sih_2020_thumbnail.jpg";
+// import ethical_hacking from "../../public/asset/img/events/ethical_hacking/ethical_hacking_thumbnail.png";
+// import vignite_1_0 from "../../public/asset/img/events/vignite_1_0/vignite_1_0_thumbnail.jpg";
+// import hour_of_code from "../../public/asset/img/events/hour_of_code/hour_of_code_thumbnail.png";
+// import hack_arena from "../../public/asset/img/events/hack_arena/hack_arena_thumbnail.png";
+// import code_battle from "../../public/asset/img/events/code_battle/code_battle_thumbnail.png";
+// import acm_inaugural from "../../public/asset/img/events/acm_inaugural/acm_inaugural_thumbnail.jpg";
 import Link from "next/link";
 
 
@@ -318,7 +318,7 @@ const Events = () => {
             whileTap={{ scale: 0.9 }}
             onClick={handlePrevClick}
           >
-            <span class="text-7xl inline-block transform rotate-180">➤</span>
+            <span className="text-7xl inline-block transform rotate-180">➤</span>
           </motion.button>
 
           <motion.button

@@ -142,7 +142,7 @@ const Navbar = () => {
                 />
             </Head>
             <main className="nav_header text-dark dark:text-light bg-light dark:bg-dark">
-                <nav className="nav px-32 xl:px-16 lg:px-8 md:px-4">
+                <nav className="nav px-8 xl:px-16 lg:px-8 md:px-4">
                     <div className="nav__data">
                         <div className='w-full flex justify-between items-center'>
                             <Link href="/">
@@ -164,17 +164,21 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <div className="nav__menu z-10 theme-transition" id="nav-menu">
+                    <div className="nav__menu z-50 theme-transition" id="nav-menu">
                         <ul className="nav__list">
                             <li className="xl1:py-4 pr-8" id="nav-toggle">
                                 <CustomLink href="/" title="Home" className="nav__link custom_nav__link" />
                             </li>
 
-
-                            {/* dropdown Discover Articles, Important Links */}
                             <li className="xl1:pb-4 pr-8">
                                 <CustomLink href="/events" title="Events" className="nav__link custom_nav__link" />
                             </li>
+
+                            <li className="xl1:pb-4 pr-8">
+                                <CustomLink href="/articles" title="Articles" className="nav__link custom_nav__link" />
+                            </li>
+
+                            {/* dropdown Discover Articles, Important Links */}
                             <li className="dropdown__item xl1:pb-4 pr-5">
                                 <div className="nav__link dropdown__button text-lg">
                                     <span>Discover</span>
@@ -190,6 +194,11 @@ const Navbar = () => {
                                                 Most viewed articles
                                             </span>
                                             <ul className="dropdown__list">
+                                                <li>
+                                                    <a href="/articles/" className="dropdown__link">
+                                                        Articles
+                                                    </a>
+                                                </li>
                                                 <li>
                                                     <a href="/articles/html-for-beginners/" className="dropdown__link">
                                                         HTML for beginners
@@ -318,6 +327,7 @@ const Navbar = () => {
                                     <button
                                         onClick={() => setMode(mode === "light" ? "dark" : "light")}
                                         className={`px-4 py-1 w-12 ml-6 sm:mx-1 flex items-center justify-center rounded-full p-[0.2rem] ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
+                                        aria-label="theme-switcher"
                                     >
                                         {
                                             mode === "dark"

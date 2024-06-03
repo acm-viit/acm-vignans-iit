@@ -1,7 +1,7 @@
 .card {
     @apply sm:w-[300px] w-[350px] dark:bg-[#242424] bg-light rounded-3xl;
     position: absolute;
-    height: 210px;
+    height: 220px;
     /* height: 450px; */
     /* background: #fff; */
     /* border-radius: 8px; */

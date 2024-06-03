@@ -10,54 +10,57 @@ import Team2024 from "@/components/team/Team2024";
 import AnimatedText from "@/components/AnimatedText";
 import HomePageLoader from "@/components/utils/HomePageLoader";
 import ACM_VIIT from '../../public/asset/svg/acm-viit-2024.svg';
+import FeaturedPosts from "@/components/Home/FeaturedPosts";
+import RecentPosts from "@/components/Home/RecentPosts";
+import {allBlogs} from "contentlayer/generated";
 
 export default function Home() {
   // const navbarRef = useRef(null);
-  const headerRef = useRef(null);
-  const heroRef1 = useRef(null);
-  const heroRef2 = useRef(null);
-  const heroRef3 = useRef(null);
+  // const headerRef = useRef(null);
+  // const heroRef1 = useRef(null);
+  // const heroRef2 = useRef(null);
+  // const heroRef3 = useRef(null);
 
-  useEffect(() => {
-    const headerElements = headerRef.current.querySelectorAll(".h1");
-    const heroElement1 = heroRef1.current;
-    const heroElement2 = heroRef2.current;
-    const heroElement3 = heroRef3.current;
+  // useEffect(() => {
+  //   const headerElements = headerRef.current.querySelectorAll(".h1");
+  //   const heroElement1 = heroRef1.current;
+  //   const heroElement2 = heroRef2.current;
+  //   const heroElement3 = heroRef3.current;
 
-    gsap.from(headerElements, {
-      duration: 1.5,
-      y: 200,
-      stagger: 0.5,
-      ease: "power4.inOut",
-    });
+  //   gsap.from(headerElements, {
+  //     duration: 1.5,
+  //     y: 200,
+  //     stagger: 0.5,
+  //     ease: "power4.inOut",
+  //   });
 
-    gsap.from([heroElement1, heroElement2, heroElement3], {
-      duration: 4,
-      y: 800,
-      ease: "power4.inOut",
-    });
-  }, []);
+  //   gsap.from([heroElement1, heroElement2, heroElement3], {
+  //     duration: 4,
+  //     y: 800,
+  //     ease: "power4.inOut",
+  //   });
+  // }, []);
 
   return (
     <>
       <Head>
         <title>ACM Vignan&apos;s IIT | Association for Computing Machinery Vignan&apos;s Institute of Information Technology - Visakhapatnam</title>
       </Head>
-      <HomePageLoader />
-      <main className="text-dark dark:text-light">
+      {/* <HomePageLoader /> */}
+      <main className="text-dark dark:text-light pb-20">
         <div
-          ref={headerRef}
+          // ref={headerRef}
           className="sm:py-4 font-bold flex items-start justify-between p-0 px-40 lg:px-8 pt-8 pb-10 selector-none"
         >
-          <IntroText className="h1 !mx-1 !px-0 text-[5rem]" text={`Inovate`} />
-          <IntroText className="h1 !mx-1 !px-0 text-[5rem]" text={`Inspire`} />
-          <IntroText className="h1 !mx-1 !px-0 text-[5rem]" text={`Build`} />
-          <IntroText className="h1 !mx-1 !px-0 text-[5rem]" text={`Deploy`} />
+          <IntroText delayTime={0.4} className="h1 !mx-1 !px-0 text-[5rem]" text={`Inovate`} />
+          <IntroText delayTime={0.6} className="h1 !mx-1 !px-0 text-[5rem]" text={`Inspire`} />
+          <IntroText delayTime={1.2} className="h1 !mx-1 !px-0 text-[5rem]" text={`Build`} />
+          <IntroText delayTime={1.8} className="h1 !mx-1 !px-0 text-[5rem]" text={`Deploy`} />
           {/* <IntroText className="h1 !mx-1 !px-0 text-[5rem]" text={`Inovate Inspire Build Deploy`} /> */}
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-1 px-40 lg:px-14 items-center justify-center align-middle overflow-hidden">
           <div
-            ref={heroRef1}
+            // ref={heroRef1}
             className="hero lg:pt-7 !border-0 !border-transparent w-[60%] sm:w-[100%]"
           >
             <Image
@@ -66,7 +69,9 @@ export default function Home() {
               className="rounded-lg !px-0 pt-4 lg:pt-0 selector-none"
             />
           </div>
-          <div ref={heroRef2} className=" sm:p-4">
+          <div
+            // ref={heroRef2}
+            className=" sm:p-4">
             <div className="flex items-center justify-center text-xl lg:pt-10 align-middle md:text-center sm:text-base sm:py-10 text-justify font-medium">
               <h3>
                 ACM brings together computing educators, researchers, and professionals to inspire dialogue, share resources, and address the field&apos;s challenges.
@@ -103,7 +108,11 @@ export default function Home() {
             className="mb-16 lg:!text-xl sm:mb-8 sm:!text-6xl xs:!text-4xl pt-16 flex items-center justify-center"
           /> */}
           <div className="h-4"></div>
-          <Team2024 />
+          {/* <Team2024 /> */}
+          <div className="px-20 md:px-8">
+          {/* <FeaturedPosts blogs={allBlogs} /> */}
+          <RecentPosts blogs={allBlogs} />
+          </div>
         </div>
       </main>
     </>

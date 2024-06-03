@@ -15,7 +15,7 @@ const Calander = ({ month = "", date = "" }) => {
         <div className="text-[10px] bg-[#e8e8e8] dark:bg-[#363636] w-full text-center font-semibold uppercase">
           {month}
         </div>
-        <div className="text-sm font-bold py-[3px]">{date}</div>
+        <div className="text-sm font-bold py-[2px]">{date}</div>
       </div>
     </div>
   );

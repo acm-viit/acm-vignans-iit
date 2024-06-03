@@ -1,13 +1,13 @@
 import React from "react";
 import MemberProfile from "@/components/MemberProfile";
-import v_b_rakesh from '../../../public/asset/img/teams/2024/v_b_rakesh.jpg'
+import rakesh_vajrapu from '../../../public/asset/img/teams/2024/rakesh_vajrapu.jpg'
 
 const Member = () => {
     return (
         <>
             <main className={`flex min-h-screen flex-col items-center justify-between text-dark dark:text-light`}>
                 <MemberProfile
-                    profilePic={v_b_rakesh}
+                    profilePic={rakesh_vajrapu}
                     name={`Rakesh Vajrapu`}
                     role={`Content Writer`}
                     linkedin={`https://www.linkedin.com/in/rakeshvajrapu/`}

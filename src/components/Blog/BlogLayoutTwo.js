@@ -4,12 +4,18 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const BlogLayoutTwo = ({ blog }) => {
+  const [imgSrc, setImgSrc] = useState(blog ? `/asset/img${blog.url}/featured.png` : '/asset/img/articles/featured.png');
+
+  const handleError = () => {
+    setImgSrc('/asset/img/articles/featured.png');
+  };
+
   if (!blog) {
     return (
-    <div className="loader-container">
-      <div className="loader"></div>
-    </div>
-    )
+      <div className="loader-container">
+        <div className="loader"></div>
+      </div>
+    );
   }
 
   const {
@@ -21,18 +27,11 @@ const BlogLayoutTwo = ({ blog }) => {
   } = blog;
 
   const {
-    filePath = "",
     blurhashDataUrl = "",
     width = 0,
     height = 0,
   } = image;
-  const imageUrl = `/asset/img${blog.url}/featured.png`;
-  const defaultImageUrl = '/asset/img/articles/featured.png';
-  const [imgSrc, setImgSrc] = useState(imageUrl);
 
-  const handleError = () => {
-    setImgSrc(defaultImageUrl);
-  };
   return (
     <div className="group grid grid-cols-12 gap-4 items-center text-dark dark:text-light">
       <Link

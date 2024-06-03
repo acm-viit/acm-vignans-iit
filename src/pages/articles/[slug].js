@@ -82,6 +82,13 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogPage({ blog, metadata }) {
+  const imageUrl = `/asset/img${blog.url}/featured.png`;
+  const [imgSrc, setImgSrc] = useState(imageUrl);
+  const defaultImageUrl = '/asset/img/articles/featured.png';
+
+  const handleError = () => {
+    setImgSrc(defaultImageUrl);
+  };
   const router = useRouter();
   if (router.isFallback) {
     return <div>Loading...</div>;
@@ -90,13 +97,7 @@ export default function BlogPage({ blog, metadata }) {
   if (!blog) {
     return <ErrorPage statusCode={404} />;
   }
-  const imageUrl = `/asset/img${blog.url}/featured.png`;
-  const defaultImageUrl = '/asset/img/articles/featured.png';
-  const [imgSrc, setImgSrc] = useState(imageUrl);
-
-  const handleError = () => {
-    setImgSrc(defaultImageUrl);
-  };
+  
 
   const {
     url = "#",

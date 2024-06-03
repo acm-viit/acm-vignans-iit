@@ -19,6 +19,10 @@ export default function Document() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={siteMetadata.title} />
         <meta name="twitter:image" content={siteMetadata.socialBanner} />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+          />
       </Head>
       <body>
         <Script id='theme-switcher' strategy='beforeInteractive'>

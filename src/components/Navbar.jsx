@@ -135,12 +135,6 @@ const Navbar = () => {
 
     return (
         <>
-            <Head>
-                <link
-                    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
-                    rel="stylesheet"
-                />
-            </Head>
             <main className="nav_header text-dark dark:text-light bg-light dark:bg-dark">
                 <nav className="nav px-8 xl:px-16 lg:px-8 md:px-4">
                     <div className="nav__data">

@@ -71,24 +71,24 @@ const Footer = () => {
                                     <div>
                                         <ul>
                                             <li>
-                                                <a href="/articles/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/" className="dropdown__link lg:line-clamp-1">
                                                     Articles
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a href="/articles/html-for-beginners/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/html-for-beginners/" className="dropdown__link lg:line-clamp-1">
                                                     HTML for beginners
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a href="/articles/advanced-css/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/advanced-css/" className="dropdown__link lg:line-clamp-1">
                                                     Advanced CSS
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a href="/articles/javascript-oop/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/javascript-oop/" className="dropdown__link lg:line-clamp-1">
                                                     JavaScript OOP
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -100,19 +100,19 @@ const Footer = () => {
                                     <div>
                                         <ul>
                                             <li>
-                                                <a href="/articles/development-with-flutter/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/development-with-flutter/" className="dropdown__link lg:line-clamp-1">
                                                     Development with Flutter
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a href="/articles/web-development-with-react/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/web-development-with-react/" className="dropdown__link lg:line-clamp-1">
                                                     Web development with React
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a href="/articles/backend-development-expert/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/backend-development-expert/" className="dropdown__link lg:line-clamp-1">
                                                     Backend development expert
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -124,24 +124,24 @@ const Footer = () => {
                                     <div>
                                         <ul>
                                             <li>
-                                                <a href="/articles/web-development/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/web-development/" className="dropdown__link lg:line-clamp-1">
                                                     Web development
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a href="/articles/applications-development/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/applications-development/" className="dropdown__link lg:line-clamp-1">
                                                     Applications development
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a href="/articles/ui-ux-design/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/ui-ux-design/" className="dropdown__link lg:line-clamp-1">
                                                     UI/UX design
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a href="/articles/informatic-security/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/informatic-security/" className="dropdown__link lg:line-clamp-1">
                                                     Informatic security
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </div>
@@ -153,14 +153,14 @@ const Footer = () => {
                                     <div>
                                         <ul>
                                             <li>
-                                                <a href="/articles/job-experience/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/job-experience/" className="dropdown__link lg:line-clamp-1">
                                                     Job Experience
-                                                </a>
+                                                </Link>
                                             </li>
                                             <li>
-                                                <a href="/articles/networking-connections/" className="dropdown__link lg:line-clamp-1">
+                                                <Link href="/articles/networking-connections/" className="dropdown__link lg:line-clamp-1">
                                                     Networking Connections
-                                                </a>
+                                                </Link>
                                             </li>
                                         </ul>
                                     </div>

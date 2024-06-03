@@ -195,24 +195,24 @@ const Navbar = () => {
                                             </span>
                                             <ul className="dropdown__list">
                                                 <li>
-                                                    <a href="/articles/" className="dropdown__link">
+                                                    <Link href="/articles/" className="dropdown__link">
                                                         Articles
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/articles/html-for-beginners/" className="dropdown__link">
+                                                    <Link href="/articles/html-for-beginners/" className="dropdown__link">
                                                         HTML for beginners
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/articles/advanced-css/" className="dropdown__link">
+                                                    <Link href="/articles/advanced-css/" className="dropdown__link">
                                                         Advanced CSS
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/articles/javascript-oop/" className="dropdown__link">
+                                                    <Link href="/articles/javascript-oop/" className="dropdown__link">
                                                         JavaScript OOP
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -223,19 +223,19 @@ const Navbar = () => {
                                             <span className="dropdown__title">Popular articles</span>
                                             <ul className="dropdown__list">
                                                 <li>
-                                                    <a href="/articles/development-with-flutter/" className="dropdown__link">
+                                                    <Link href="/articles/development-with-flutter/" className="dropdown__link">
                                                         Development with Flutter
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/articles/web-development-with-react/" className="dropdown__link">
+                                                    <Link href="/articles/web-development-with-react/" className="dropdown__link">
                                                         Web development with React
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/articles/backend-development-expert/" className="dropdown__link">
+                                                    <Link href="/articles/backend-development-expert/" className="dropdown__link">
                                                         Backend development expert
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -246,24 +246,24 @@ const Navbar = () => {
                                             <span className="dropdown__title">Careers</span>
                                             <ul className="dropdown__list">
                                                 <li>
-                                                    <a href="/articles/web-development/" className="dropdown__link">
+                                                    <Link href="/articles/web-development/" className="dropdown__link">
                                                         Web development
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/articles/applications-development/" className="dropdown__link">
+                                                    <Link href="/articles/applications-development/" className="dropdown__link">
                                                         Applications development
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/articles/ui-ux-design/" className="dropdown__link">
+                                                    <Link href="/articles/ui-ux-design/" className="dropdown__link">
                                                         UI/UX design
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/articles/informatic-security/" className="dropdown__link">
+                                                    <Link href="/articles/informatic-security/" className="dropdown__link">
                                                         Informatic security
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -274,14 +274,14 @@ const Navbar = () => {
                                             <span className="dropdown__title">Alumni Experience</span>
                                             <ul className="dropdown__list">
                                                 <li>
-                                                    <a href="/articles/job-experience/" className="dropdown__link">
+                                                    <Link href="/articles/job-experience/" className="dropdown__link">
                                                         Job Experience
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                                 <li>
-                                                    <a href="/articles/networking-connections/" className="dropdown__link">
+                                                    <Link href="/articles/networking-connections/" className="dropdown__link">
                                                         Networking Connections
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </div>

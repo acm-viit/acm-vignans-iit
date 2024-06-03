@@ -9,7 +9,7 @@ import { useRouter } from 'next/router';
 import ErrorPage from 'next/error';
 import Head from "next/head";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 
 const AuthorName = (name) => {
@@ -92,7 +92,7 @@ export default function BlogPage({ blog, metadata }) {
   }
   const imageUrl = `/asset/img${blog.url}/featured.png`;
   const defaultImageUrl = '/asset/img/articles/featured.png';
-  const [imgSrc, setImgSrc] = React.useState(imageUrl);
+  const [imgSrc, setImgSrc] = useState(imageUrl);
 
   const handleError = () => {
     setImgSrc(defaultImageUrl);
@@ -135,7 +135,7 @@ export default function BlogPage({ blog, metadata }) {
       "url": siteMetadata.twitter,
     }]
   }
-  
+
 
   return (
     <>

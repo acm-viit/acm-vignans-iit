@@ -1,12 +1,12 @@
 import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const BlogLayoutThree = ({ blog }) => {
   const imageUrl = `/asset/img${blog.url}/featured.png`;
   const defaultImageUrl = '/asset/img/articles/featured.png';
-  const [imgSrc, setImgSrc] = React.useState(imageUrl);
+  const [imgSrc, setImgSrc] = useState(imageUrl);
 
   const handleError = () => {
     setImgSrc(defaultImageUrl);

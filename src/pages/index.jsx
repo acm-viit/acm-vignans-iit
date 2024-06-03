@@ -13,6 +13,7 @@ import ACM_VIIT from '../../public/asset/svg/acm-viit-2024.svg';
 import FeaturedPosts from "@/components/Home/FeaturedPosts";
 import RecentPosts from "@/components/Home/RecentPosts";
 import {allBlogs} from "contentlayer/generated";
+import siteMetadata from "@/utils/siteMetaData";
 
 export default function Home() {
   // const navbarRef = useRef(null);
@@ -45,6 +46,12 @@ export default function Home() {
     <>
       <Head>
         <title>ACM Vignan&apos;s IIT | Association for Computing Machinery Vignan&apos;s Institute of Information Technology - Visakhapatnam</title>
+        <meta property="og:title" content={`ACM Vignan's IIT`} />
+        <meta property="og:description" content={`ACM Vignan's IIT | Association for Computing Machinery Vignan&apos;s Institute of Information Technology - Visakhapatnam`} />
+        <meta property="og:url" content={`${siteMetadata.siteUrl}`} />
+        <meta property="og:site_name" content={`ACM Vignan's IIT`} />
+        <meta key={`og-image`} property="og:image" content={`${siteMetadata.siteUrl}/social-banner.png`} />
+        <meta key={`twitter-image`} name="twitter:image" content={`${siteMetadata.siteUrl}/social-banner.png`} />
       </Head>
       {/* <HomePageLoader /> */}
       <main className="text-dark dark:text-light pb-20">

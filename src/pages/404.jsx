@@ -16,7 +16,7 @@ const NotFound = () => {
             </Head>
             <main className="flex items-center justify-center h-screen">
                 <section className="text-center pb-40 lg:pb-20">
-                    <div className="container flex items-center justify-center lg:flex-col lg:gap-20 gap-[28rem]">
+                    <div className="container flex items-center justify-center lg:flex-col lg:gap-10 lg:mb-28 gap-[28rem]">
                         <div className=' order-1 lg:order-2'>
                             <span className="text-2xl">Error 404</span>
                             <p className="mt-4">We can&apos;t seem to find the page <br /> you are looking for.</p>
@@ -40,7 +40,7 @@ const NotFound = () => {
                                 </Link>
                             </div>
                         </div>
-                        <div className="relative order-2 lg:order-1 mb-20">
+                        <div className="relative order-2 lg:order-1 lg:mb-0 mb-20">
                             <h1 className="text-[20rem] lg:text-[10rem] font-black text-dark/90 dark:text-light gradien w-56 animate-bounce flex items-center justify-center font-rammetto-one selector-none">
                                 404
                             </h1>

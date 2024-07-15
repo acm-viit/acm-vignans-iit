@@ -9,6 +9,15 @@ import { GithubIcon, LinkedInIcon, InstagramIcon, TwitterIcon } from "@/componen
 
 import SUS_HACKS from '../../../public/asset/img/events/sus_hacks_april_2024/sus_hacks_april_2024_thumbnail.jpg'
 import AGRI_HACK from "../../../public/asset/img/events/agri-hack/agri-hack-thumbnail.jpg";
+import LANGCHAIN from "../../../public/asset/img/events/langchain/images.png";
+import DSA from "../../../public/asset/img/events/dsa/dsa.png";
+import NETWORKING from "../../../public/asset/img/events/networking/cn.jpeg";
+import AGRICULTURE from "../../../public/asset/img/events/agriculture/precision.jpg";
+import IT from "../../../public/asset/img/events/it/it.jpeg";
+import SF from "../../../public/asset/img/events/salesforce/sf.jpg";
+import RESEARCH from "../../../public/asset/img/events/research/research.jpg";
+import FINANCE from "../../../public/asset/img/events/finance/finance.jpg";
+
 import vignite_3_0 from "../../../public/asset/img/events/vignite_3_0/vignite_3_0_thumbnail.jpg";
 import ideathon_june_2022 from "../../../public/asset/img/events/ideathon_june_2022/ideathon_june_2022_thumbnail.jpg";
 import ideathon_feb_2022 from "../../../public/asset/img/events/ideathon_feb_2022/ideathon_feb_2022_thumbnail.png";
@@ -184,6 +193,22 @@ const Events = () => {
         {/* Recent Events */}
         <div className="flex items-center justify-center relative mt-2">
           <div className="grid grid-cols-3 2xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 items-center justify-center">
+          <EventCard
+              className={`mr-6 ml-2`}
+              link="/events/dsa"
+              title='RoadMap to DSA'
+              featuredImage={DSA}
+              eventdate={"March 20, 2024"}
+              description="RoadMap to DSA is a workshop conducted by Vignan's IIT ACM Student Chapter, where students learn the basics of DataStructures and Algorithms."
+            />
+            <EventCard
+              className={`mr-6 ml-2`}
+              link="/events/langchain"
+              title='Getting Started with LangChain'
+              featuredImage={LANGCHAIN}
+              eventdate={"Nov 10, 2023"}
+              description="LangChain is a decentralized platform that aims to provide a secure and transparent way to store and share language data."
+            />
             <EventCard
               className={`mx-3 sm:mx-0`}
               link="/events/agri-hack"
@@ -191,6 +216,22 @@ const Events = () => {
               featuredImage={AGRI_HACK}
               eventdate={"Sep 01, 2022"}
               description="AGRI-HACK-2022 aims to foster innovation in agriculture by providing a platform for collaboration and knowledge exchange among engineering faculty."
+            />
+            <EventCard
+              className={`mr-6 ml-2`}
+              link="/events/agriculture"
+              title='Precision Agriculture'
+              featuredImage={AGRICULTURE}
+              eventdate={"Nov 14, 2022"}
+              description="Precision Agriculture is a workshop conducted by Vignan's IIT ACM Student Chapter, where students learn the basics of Precision Agriculture."
+            />
+            <EventCard
+              className={`mr-6 ml-2`}
+              link="/events/agri-hack"
+              title='Networking Essentials'
+              featuredImage={NETWORKING}
+              eventdate={"Jul 20, 2022"}
+              description="Networking Essentials is a workshop conducted by Vignan's IIT ACM Student Chapter, where students learn the basics of Networking."
             />
             <EventCard
               className={`mx-3 sm:mx-0`}
@@ -207,6 +248,22 @@ const Events = () => {
               featuredImage={ideathon_june_2022}
               eventdate={"Jun 30, 2022"}
               description="Ideathon is an intensive brainstorming event conducted by ACM VIGNAN on 28th june 2022, to give an opportunity to talented minds to generate fresh solutions to existing challenges in the community."
+            />
+             <EventCard
+              className={`mx-3 sm:mx-0`}
+              link="/events/finance"
+              title="Fair digital finance"
+              featuredImage={FINANCE}
+              eventdate={"March 15, 2022"}
+              description="Fair digital finance is an intensive brainstorming event conducted by ACM VIGNAN on 28th june 2022, to give an opportunity to talented minds to generate fresh solutions to existing challenges in the community."
+            />
+             <EventCard
+              className={`mx-3 sm:mx-0`}
+              link="/events/research"
+              title="How to write a research article"
+              featuredImage={RESEARCH}
+              eventdate={"March 03, 2022"}
+              description="How to write a research article is an intensive brainstorming event conducted by ACM VIGNAN on 28th june 2022, to give an opportunity to talented minds to generate fresh solutions to existing challenges in the community."
             />
             <EventCard
               className={`mx-3 sm:mx-0`}
@@ -239,6 +296,22 @@ const Events = () => {
               featuredImage={hour_of_code_2021}
               eventdate={"Dec 07, 2021"}
               description="As a part of the ACM student chapter at Vignan's IIT, we organized the Hour of Code event on 07th Dec 2021. This event was dedicated to the global movement about programming and technology in the current world scenario."
+            />
+            <EventCard
+              className={`mx-3 sm:mx-0`}
+              link="/events/salesforce"
+              title="Salesforce and its opportunities in software industry"
+              featuredImage={SF}
+              eventdate={"Nov 17, 2021"}
+              description="As a part of the ACM student chapter at Vignan's IIT, we organized the session on Salesforce"
+            />
+             <EventCard
+              className={`mx-3 sm:mx-0`}
+              link="/events/it"
+              title="Advances in information sciences and technology"
+              featuredImage={IT}
+              eventdate={"Oct 28, 2021"}
+              description="As a part of the ACM student chapter at Vignan's IIT, we organized the Advancing in information sciences event on 28 Oct 2021. This event was dedicated to the information sciences"
             />
             <EventCard
               className={`mx-3 sm:mx-0`}

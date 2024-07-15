@@ -8,6 +8,10 @@ import AGRI_HACK from "../../public/asset/img/events/agri-hack/agri-hack-thumbna
 import vignite_3_0 from "../../public/asset/img/events/vignite_3_0/vignite_3_0_thumbnail.jpg";
 import ideathon_june_2022 from "../../public/asset/img/events/ideathon_june_2022/ideathon_june_2022_thumbnail.jpg";
 import ideathon_feb_2022 from "../../public/asset/img/events/ideathon_feb_2022/ideathon_feb_2022_thumbnail.png";
+import LANGCHAIN from "../../public/asset/img/events/langchain/images.png";
+import DSA from "../../public/asset/img/events/dsa/dsa.png";
+import NETWORKING from "../../public/asset/img/events/networking/cn.jpeg";
+
 // import github_workshop from "../../public/asset/img/events/github_workshop/github_workshop_thumbnail.png";
 // import hands_on_with_jenkins from "../../public/asset/img/events/hands_on_with_jenkins/hands_on_with_jenkins_thumbnail.png";
 // import hour_of_code_2021 from "../../public/asset/img/events/hour_of_code_2021/hour_of_code_2021_thumbnail.png";
@@ -75,11 +79,35 @@ const Events = () => {
             />
             <EventCard
               className={`mr-6 ml-2`}
+              link="/events/dsa"
+              title='RoadMap to DSA'
+              featuredImage={DSA}
+              eventdate={"March 20, 2024"}
+              description="RoadMap to DSA is a workshop conducted by Vignan's IIT ACM Student Chapter, where students learn the basics of DataStructures and Algorithms."
+            />
+            <EventCard
+              className={`mr-6 ml-2`}
+              link="/events/langchain"
+              title='Getting Started with LangChain'
+              featuredImage={LANGCHAIN}
+              eventdate={"Nov 10, 2023"}
+              description="LangChain is a decentralized platform that aims to provide a secure and transparent way to store and share language data."
+            />
+            <EventCard
+              className={`mr-6 ml-2`}
               link="/events/agri-hack"
               title='Agri Hack'
               featuredImage={AGRI_HACK}
               eventdate={"Sep 01, 2022"}
               description="AGRI-HACK-2022 aims to foster innovation in agriculture by providing a platform for collaboration and knowledge exchange among engineering faculty."
+            />
+             <EventCard
+              className={`mr-6 ml-2`}
+              link="/events/networking"
+              title='Networking Essentials'
+              featuredImage={NETWORKING}
+              eventdate={"Jul 20, 2022"}
+              description="Networking Essentials is a workshop conducted by Vignan's IIT ACM Student Chapter, where students learn the basics of Networking."
             />
             <EventCard
               className={`mr-6`}

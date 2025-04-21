@@ -3,6 +3,11 @@ import ProfileCard from "../ProfileCard";
 import AnimatedText from "../AnimatedText";
 
 import mr_b_dinesh_reddy from '../../../public/asset/img/teams/2024/mr_b_dinesh_reddy.png'
+import sidharth_varma from '../../../public/asset/img/teams/2025/Sidharth.jpg'
+import chaitanya_mallela from '../../../public/asset/img/teams/2025/Chaitanya.jpg'
+import jyothika from '../../../public/asset/img/teams/2025/Jyothika.jpg'
+import zafar from '../../../public/asset/img/teams/2025/zafar.jpg'
+
 import abdul_rafay from '../../../public/asset/img/teams/2024/abdul_rafay.png'
 import alayna_shaheen from '../../../public/asset/img/teams/2024/alayna_shaheen.jpg'
 import abhinav_bathina from '../../../public/asset/img/teams/2024/abhinav_bathina.jpeg'
@@ -45,11 +50,11 @@ const Team2025 = () => {
                         imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
-                        href="/team/hari-charan-kandregula/"
-                        profilePic={k_hari_charan}
-                        name={`Hari Charan Kandregula`}
+                        href="/team/sidharth_varma/"
+                        profilePic={sidharth_varma}
+                        name={`Sidharth Varma`}
                         role={`Chairperson`}
-                        linkedin={`https://in.linkedin.com/in/haricharan0310`}
+                        linkedin={`https://www.linkedin.com/in/elitedeveloper05`}
                         github={`https://github.com/Haricharan0310`}
                         twitter={`https://twitter.com/haricharan0310`}
                         className={`w-[400px] sm:w-[350px]`}
@@ -57,22 +62,22 @@ const Team2025 = () => {
                 </div>
                 <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-80 sm:px-0">
                     <ProfileCard
-                        href="/team/tatavarty-s-s-krishna-sasank/"
-                        profilePic={t_krishna_sasank}
-                        name={`Tatavarty S. S. Krishna Sasank`}
+                        href="/team/chaitanya_mallela/"
+                        profilePic={chaitanya_mallela}
+                        name={`Chaitanya Mallela`}
                         role={`Vice Chairperson`}
-                        linkedin={`https://linkedin.com/in/krishna-sasank-5212a5256`}
-                        github={`https://github.com/krishna-sasank9`}
+                        linkedin={`https://www.linkedin.com/in/chaitanya-mallela-21ba66271/`}
+                        github={`https://github.com/chaimass6`}
                         twitter={``}
                         className={`w-[400px] sm:w-[350px]`}
                     />
                 </div>
                 <div className="grid grid-cols-3 2xl:grid-cols-3 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-40 2xl:px-20 sm:px-0">
                     <ProfileCard
-                        href="/team/k-yaswanth/"
-                        profilePic={k_yaswanth}
-                        name={`K. Yaswanth`}
-                        role={`Secretary`}
+                        href="/team/jyothika/"
+                        profilePic={jyothika}
+                        name={`Chitturi Jyothika Rajeswari`}
+                        role={`Treasurer`}
                         linkedin={``}
                         github={``}
                         twitter={``}
@@ -81,32 +86,21 @@ const Team2025 = () => {
                     <ProfileCard
                         href="/team/abdul-rafay/"
                         profilePic={abdul_rafay}
-                        name={`Abdul Rafay`}
-                        role={`Treasurer`}
+                        name={`Gautam Ankoji`}
+                        role={`Technical`}
                         linkedin={``}
                         github={``}
                         twitter={``}
                         imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
-                        href="/team/mohith_vishal/"
-                        profilePic={mohith_vishal}
-                        name={`Mohith Vishal`}
+                        href="/team/zafar/"
+                        profilePic={zafar}
+                        name={`Mohammed Abdul Zafar`}
                         role={`Membership Chair`}
                         linkedin={``}
                         github={``}
                         twitter={``}
-                    />
-                </div>
-                <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-80 sm:px-0">
-                    <ProfileCard
-                        href="/team/kancherla-sri-vishnu/"
-                        profilePic={kancherla_sri_vishnu}
-                        name={`Kancherla Sri Vishnu`}
-                        role={`Web Master`}
-                        linkedin={`https://www.linkedin.com/in/sri-vishnu-kancherla-06639b221/`}
-                        github={`https://github.com/Vishnu1804K`}
-                        twitter={`https://x.com/KancherlaSri`}
                     />
                 </div>
                 <div>

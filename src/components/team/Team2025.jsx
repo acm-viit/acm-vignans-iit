@@ -7,6 +7,14 @@ import sidharth_varma from '../../../public/asset/img/teams/2025/Sidharth.jpg'
 import chaitanya_mallela from '../../../public/asset/img/teams/2025/Chaitanya.jpg'
 import jyothika from '../../../public/asset/img/teams/2025/Jyothika.jpg'
 import zafar from '../../../public/asset/img/teams/2025/zafar.jpg'
+import mihira from '../../../public/asset/img/teams/2025/Mihira.png'
+import gowrav from '../../../public/asset/img/teams/2025/Gowrav.png'
+import neha from '../../../public/asset/img/teams/2025/Neha.jpg'
+import kcharan from '../../../public/asset/img/teams/2025/KCharan.jpg'
+import rohith from '../../../public/asset/img/teams/2025/Rohith.jpg'
+import nikhil from '../../../public/asset/img/teams/2025/Nikhil.jpg'
+import raghavendra from '../../../public/asset/img/teams/2025/Raghavendra.jpg'
+import durgaprasad from '../../../public/asset/img/teams/2025/Durgaprasad.jpg'
 
 import abdul_rafay from '../../../public/asset/img/teams/2024/abdul_rafay.png'
 import alayna_shaheen from '../../../public/asset/img/teams/2024/alayna_shaheen.jpg'
@@ -37,7 +45,7 @@ const Team2025 = () => {
                     text="Meet the Team of 2024"
                     className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-2xl pt-16 flex items-center justify-center"
                 />
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-80 2xl:px-40 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-24 xl:gap-[0] items-center px-80 2xl:px-40 sm:px-0">
                     <ProfileCard
                         href="/team/mr-b-dinesh-reddy/"
                         profilePic={mr_b_dinesh_reddy}
@@ -58,6 +66,7 @@ const Team2025 = () => {
                         github={`https://github.com/Haricharan0310`}
                         twitter={`https://twitter.com/haricharan0310`}
                         className={`w-[400px] sm:w-[350px]`}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
                 <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-80 sm:px-0">
@@ -70,6 +79,7 @@ const Team2025 = () => {
                         github={`https://github.com/chaimass6`}
                         twitter={``}
                         className={`w-[400px] sm:w-[350px]`}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
                 <div className="grid grid-cols-3 2xl:grid-cols-3 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-40 2xl:px-20 sm:px-0">
@@ -84,12 +94,12 @@ const Team2025 = () => {
                         imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
-                        href="/team/abdul-rafay/"
-                        profilePic={abdul_rafay}
+                        href="/team/gautam_ankoji/"
+                        profilePic={gautam_ankoji}
                         name={`Gautam Ankoji`}
                         role={`Technical`}
-                        linkedin={``}
-                        github={``}
+                        linkedin={`https://www.linkedin.com/in/gautamankoji/`}
+                        github={`https://github.com/gautamankoji/`}
                         twitter={``}
                         imgBxClassName={`!rounded-full`}
                     />
@@ -97,10 +107,11 @@ const Team2025 = () => {
                         href="/team/zafar/"
                         profilePic={zafar}
                         name={`Mohammed Abdul Zafar`}
-                        role={`Membership Chair`}
-                        linkedin={``}
-                        github={``}
+                        role={`Technical`}
+                        linkedin={`https://www.linkedin.com/in/md-abdul-zafar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`}
+                        github={`https://github.com/zafarabdul`}
                         twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
                 <div>
@@ -108,158 +119,108 @@ const Team2025 = () => {
                 </div>
                 <div className="grid grid-cols-3 2xl:grid-cols-3 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-40 2xl:px-20 sm:px-0">
                     <ProfileCard
-                        href="/team/k-s-k-koushik/"
-                        profilePic={k_s_k_koushik}
-                        name={`K. S. K. Koushik`}
-                        role={`Machine Learning`}
+                        href="/team/mihira/"
+                        profilePic={mihira}
+                        name={`Vinjamuri Mihira`}
+                        role={`Web Developer`}
+                        linkedin={`https://www.linkedin.com/in/vinjamurimihira/`}
+                        github={`https://github.com/Vmihira`}
+                        twitter={``}
+                        imgBxClassName={`!rounded-full`}
+                    />
+                    <ProfileCard
+                        href="/team//"
+                        profilePic={''}
+                        name={`Partha Srikar`}
+                        role={`Web Developer`}
                         linkedin={``}
                         github={``}
                         twitter={``}
                         imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
-                        href="/team/gautam-ankoji/"
-                        profilePic={gautam_ankoji}
-                        name={`Gautam Ankoji`}
-                        role={`Web/Moblie Technologies`}
-                        linkedin={`https://www.linkedin.com/in/gautamankoji/`}
-                        github={`https://github.com/gautamankoji/`}
+                        href="/team/gowrav/"
+                        profilePic={gowrav}
+                        name={`Gowrav Sai Veeramallu`}
+                        role={`UI/UX`}
+                        linkedin={`https://www.linkedin.com/in/gowrav-sai-veeramallu/`}
+                        github={`https://github.com/GowravSai26`}
                         twitter={``}
-                    />
-                    <ProfileCard
-                        href="/team/k-satya-narayana/"
-                        profilePic={k_satya_narayana}
-                        name={`K. Satya Narayana`}
-                        role={`Blockchain`}
-                        linkedin={`https://www.linkedin.com/in/satya-narayana-kuna-03534223`}
-                        github={`https://github.com/satya2804`}
-                        twitter={`https://x.com/Satya2844`}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-[24rem] 2xl:px-40 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-24 xl:gap-[0] items-center px-[24rem] 2xl:px-40 sm:px-0">
                     <ProfileCard
-                        href="/team/b-m-ramana-sai/"
-                        profilePic={manasvi_ramana_sai}
-                        name={`B. M. Ramana Sai`}
-                        role={`UI/UX`}
-                        linkedin={`https://www.linkedin.com/in/manasviramanasai`}
-                        github={`https://github.com/manuzz29`}
-                        twitter={`https://x.com/Ramana290?t=udhBxBlCWdYR6nbC7Y_9Rw&s=09`}
+                        href="/team/neha/"
+                        profilePic={neha}
+                        name={`Dunna Venkata Sai Neha `}
+                        role={`AI/ML`}
+                        linkedin={`https://www.linkedin.com/in/neha-dvs-275181270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app, https://x.com/Neha_1775?t=vhx6Sbk76zs2VS6Tw9pVCA&s=09`}
+                        github={`https://github.com/dvsneha`}
+                        twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
-                        href="/team/sharmila-bheemisetty/"
-                        profilePic={sharmila_bheemisetty}
-                        name={`Bheemisetty Sharmila`}
-                        role={`Web Technologies`}
-                        linkedin={`https://www.linkedin.com/in/bheemisetty-sharmila-aa6459257`}
-                        github={`https://github.com/sharmi4590`}
-                        twitter={`https://twitter.com/sharmi4590`}
+                        href="/team/kcharan/"
+                        profilePic={kcharan}
+                        name={`Kaki Gurucharan `}
+                        role={`AI/ML`}
+                        linkedin={`https://www.linkedin.com/in/k-guru-charan-28988a304?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`}
+                        github={`https://github.com/Charan3uu`}
+                        twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
                 <div>
-                    <h1 className="flex items-center justify-center font-bold text-5xl pt-8 pb-14 md:text-3xl">Editorial Team</h1>
+                    <h1 className="flex items-center justify-center font-bold text-5xl pt-8 pb-14 md:text-3xl">CP Team</h1>
                 </div>
-                <div className="grid grid-cols-3 2xl:grid-cols-3 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-40 2xl:px-20 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-24 xl:gap-[0] items-center px-[24rem] 2xl:px-40 sm:px-0">
                     <ProfileCard
-                        href="/team/k-srujan/"
-                        profilePic={k_srujan}
-                        name={`K. Srujan`}
-                        role={`Video Editor`}
-                        linkedin={``}
-                        github={``}
+                        href="/team/raghavendra/"
+                        profilePic={raghavendra}
+                        name={`D Raghavendra Suryanarayana`}
+                        role={`CP Lead`}
+                        linkedin={`https://in.linkedin.com/in/raghava-dhanukonda-9b3243254`}
+                        github={`https://github.com/raghava7095`}
                         twitter={``}
                         imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
-                        href="/team/nehal-fathema/"
-                        profilePic={nehal_fathema}
-                        name={`Nehal Fathema`}
-                        role={`Technical Content Writer`}
-                        linkedin={`https://www.linkedin.com/in/nehal-fathema`}
-                        github={`https://github.com/nehal-5`}
-                        twitter={`https://x.com/fathema_nehal`}
-                    />  
-                    <ProfileCard
-                        href="/team/rakesh-vajrapu/"
-                        profilePic={rakesh_vajrapu}
-                        name={`Rakesh Vajrapu`}
-                        role={`Content Writer`}
-                        linkedin={`https://www.linkedin.com/in/rakeshvajrapu/`}
-                        github={`https://github.com/rakesh-vajrapu`}
-                        twitter={`https://twitter.com/rakesh_vajrapu`}
-                    />
+                        href="/team/durgaprasad/"
+                        profilePic={durgaprasad}
+                        name={`B Satya Dura Vara Prasad`}
+                        role={`CP Lead`}
+                        linkedin={`https://www.linkedin.com/in/satya-durga-vara-prasad-boddapu/`}
+                        github={`https://github.com/PRASAD0521`}
+                        twitter={``}
+                        imgBxClassName={`!rounded-full`}
+                    /> 
                 </div>
                 {/* <div className="grid grid-cols-1 2xl:grid-cols-1 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-80 sm:px-0">
                 </div> */}
                 <div>
                     <h1 className="flex items-center justify-center font-bold text-5xl pt-8 pb-14 md:text-3xl">Event Management Team</h1>
                 </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-[24rem] 2xl:px-40 sm:px-0">
+                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-24 xl:gap-[0] items-center px-[24rem] 2xl:px-40 sm:px-0">
                     <ProfileCard
-                        href="/team/abhinav-bnvs/"
-                        profilePic={abhinav_bathina}
-                        name={`Abhinav BNVS`}
+                        href="/team/nikhil/"
+                        profilePic={nikhil}
+                        name={`Nikhil Adapureddy`}
                         role={`Event Manager`}
-                        linkedin={`https://www.linkedin.com/in/abhinav-bathina-7a7926251`}
-                        github={`https://github.com/AbhinavBathina`}
-                        twitter={`https://x.com/Abhinav21345521`}
+                        linkedin={`https://www.linkedin.com/in/nikhil-adapureddy-61118a263?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`}
+                        github={`https://github.com/nikkhil9`}
+                        twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                     <ProfileCard
-                        href="/team/amrutha-rokkam/"
-                        profilePic={amrutha_rokkam}
-                        name={`Amrutha Rokkam`}
+                        href="/team/rohith/"
+                        profilePic={rohith}
+                        name={`DVS Sai Rohith `}
                         role={`Event Manager`}
-                        linkedin={`https://www.linkedin.com/in/lakshmi-amrutha-rokkam-0b023122a`}
-                        github={`https://github.com/Amrutha-01`}
+                        linkedin={`https://www.linkedin.com/in/rohith-dhanalakota-7a2626271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app`}
+                        github={`http://www.github.com/rohith8019`}
                         twitter={``}
-                    />
-                </div>
-                <div>
-                    <h1 className="flex items-center justify-center font-bold text-5xl pt-8 pb-14 md:text-3xl">Public Speaker&apos;s Team</h1>
-                </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-[24rem] 2xl:px-40 sm:px-0">
-                    <ProfileCard
-                        href="/team/vaishnavi-basa/"
-                        profilePic={basa_vaishnavi}
-                        name={`Vaishnavi Basa`}
-                        role={`Public Speaker`}
-                        linkedin={`https://www.linkedin.com/in/vaishnavibasa14102003`}
-                        github={`https://gitHub.com/vyshu-03`}
-                        twitter={`https://twitter.com/vyshu_03`}
-                    />
-                    <ProfileCard
-                        href="/team/alayna-shaheen/"
-                        profilePic={alayna_shaheen}
-                        name={`Alayna Shaheen`}
-                        role={`Public Speaker`}
-                        linkedin={`https://www.linkedin.com/in/alayna-shaheen-782680249`}
-                        github={`https://github.com/AlaynaShaheen`}
-                        twitter={`https://twitter.com/alayna_shaheen`}
-                    />
-                </div>
-                <div>
-                    <h1 className="flex items-center justify-center font-bold text-5xl pt-8 pb-14 md:text-3xl">Special Interest Team</h1>
-                </div>
-                <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-4 xl:gap-[0] items-center px-[24rem] 2xl:px-40 sm:px-0
-                
-                ">
-                    <ProfileCard
-                        href="/team/jagruthi-kotana/"
-                        profilePic={jagruthi_kotana}
-                        name={`Jagruthi Kotana`}
-                        role={`Member`}
-                        linkedin={`https://www.linkedin.com/in/jagruthi-kotana-37608b272`}
-                        github={`https://github.com/jagruthi28`}
-                        twitter={``}
-                    />
-                    <ProfileCard
-                        href="/team/mylapalli-tejesh/"
-                        profilePic={mylapalli_tejesh}
-                        name={`Mylapalli Tejesh`}
-                        role={`Member`}
-                        linkedin={`https://www.linkedin.com/in/mylapalli-tejesh-b1a174270`}
-                        github={`https://github.com/tejesh2709`}
-                        twitter={``}
+                        imgBxClassName={`!rounded-full`}
                     />
                 </div>
             </div>

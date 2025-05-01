@@ -14,7 +14,7 @@ import kcharan from '../../../public/asset/img/teams/2025/KCharan.jpg'
 import rohith from '../../../public/asset/img/teams/2025/Rohith.jpg'
 import nikhil from '../../../public/asset/img/teams/2025/Nikhil.jpg'
 import raghavendra from '../../../public/asset/img/teams/2025/Raghavendra.jpg'
-import durgaprasad from '../../../public/asset/img/teams/2025/Durgaprasad.jpg'
+import durgaprasad from '../../../public/asset/img/teams/2025/DurgaPrasad.jpg'
 
 import abdul_rafay from '../../../public/asset/img/teams/2024/abdul_rafay.png'
 import alayna_shaheen from '../../../public/asset/img/teams/2024/alayna_shaheen.jpg'

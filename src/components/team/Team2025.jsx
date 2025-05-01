@@ -42,7 +42,7 @@ const Team2025 = () => {
         <>
             <div className="container mx-auto mb-20 px-8">
                 <AnimatedText
-                    text="Meet the Team of 2024"
+                    text="Meet the Team of 2025"
                     className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-2xl pt-16 flex items-center justify-center"
                 />
                 <div className="grid grid-cols-2 2xl:grid-cols-2 md:grid-cols-1 xl:grid-cols-1 gap-24 xl:gap-[0] items-center px-80 2xl:px-40 sm:px-0">

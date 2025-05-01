@@ -8,7 +8,7 @@ import AnimatedText from './AnimatedText';
 import { motion } from 'framer-motion';
 
 const Teams = () => {
-    const [activeTab, setActiveTab] = useState('2024');
+    const [activeTab, setActiveTab] = useState('2025');
 
     const handleTabChange = (tab) => {
         setActiveTab(tab);

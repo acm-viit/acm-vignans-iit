@@ -1,47 +1,15 @@
-import gsap from "gsap";
 import Head from "next/head";
-import Link from "next/link";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import Events from "@/components/Events";
 import IntroText from "@/components/IntroText";
-import React, { useEffect, useRef } from "react";
-import Team2024 from "@/components/team/Team2024";
-import AnimatedText from "@/components/AnimatedText";
-import HomePageLoader from "@/components/utils/HomePageLoader";
-import ACM_VIIT from '../../public/asset/svg/acm-viit-2024.svg';
-import FeaturedPosts from "@/components/Home/FeaturedPosts";
-import RecentPosts from "@/components/Home/RecentPosts";
-import {allBlogs} from "contentlayer/generated";
 import siteMetadata from "@/utils/siteMetaData";
+import { allBlogs } from "contentlayer/generated";
+import Team2025 from "@/components/team/Team2025";
+import AnimatedText from "@/components/AnimatedText";
+import RecentPosts from "@/components/Home/RecentPosts";
+import ACM_VIIT from '../../public/asset/svg/acm-viit-2024.svg';
 
 export default function Home() {
-  // const navbarRef = useRef(null);
-  // const headerRef = useRef(null);
-  // const heroRef1 = useRef(null);
-  // const heroRef2 = useRef(null);
-  // const heroRef3 = useRef(null);
-
-  // useEffect(() => {
-  //   const headerElements = headerRef.current.querySelectorAll(".h1");
-  //   const heroElement1 = heroRef1.current;
-  //   const heroElement2 = heroRef2.current;
-  //   const heroElement3 = heroRef3.current;
-
-  //   gsap.from(headerElements, {
-  //     duration: 1.5,
-  //     y: 200,
-  //     stagger: 0.5,
-  //     ease: "power4.inOut",
-  //   });
-
-  //   gsap.from([heroElement1, heroElement2, heroElement3], {
-  //     duration: 4,
-  //     y: 800,
-  //     ease: "power4.inOut",
-  //   });
-  // }, []);
-
   return (
     <>
       <Head>
@@ -93,15 +61,6 @@ export default function Home() {
                 </span>
               </h3>
             </div>
-            {/* <div className="group flex items-center justify-center pt-8">
-              <Link
-                href={joinus}
-                target="_bank"
-                className="btn btn-blue transform hover:scale-105 transition-transform duration-300"
-              >
-                Join Us
-              </Link>
-            </div> */}
           </div>
         </div>
         <div className="pt-20 sm:pt-10">
@@ -110,15 +69,9 @@ export default function Home() {
             className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-4xl pt-16 flex items-center justify-center"
           />
           <Events />
-          {/* <IntroText
-            text="Meet the Team"
-            className="mb-16 lg:!text-xl sm:mb-8 sm:!text-6xl xs:!text-4xl pt-16 flex items-center justify-center"
-          /> */}
-          <div className="h-4"></div>
-          {/* <Team2024 /> */}
+          <Team2025 />
           <div className="px-20 md:px-8">
-          {/* <FeaturedPosts blogs={allBlogs} /> */}
-          <RecentPosts blogs={allBlogs} />
+            <RecentPosts blogs={allBlogs} />
           </div>
         </div>
       </main>

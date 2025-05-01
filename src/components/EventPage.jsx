@@ -30,7 +30,7 @@ const extractMonthAndDate = (event_date) => {
   return { month, date };
 };
 
-const EventPage = ({ title, thumbnail, description, organizers = {}, event_location, event_date = "", event_time = "", photo_gallary = {}, registration_available = false, registration, registration_closed = false, registration_link = "", download_template = {}, profile_cards = {}, profile_cards_title = "", winners_gallary = {}, winners_gallary_title = "" }) => {
+const EventPage = ({ title, thumbnail, description, organizers = {}, event_location, event_date = "", event_time = "", photo_gallery = [], registration_available = false, registration, registration_closed = false, registration_link = "", download_template = {}, profile_cards = {}, profile_cards_title = "", winners_gallery = {}, winners_gallery_title = "" }) => {
 
   const { month, date } = extractMonthAndDate(event_date);
   const { location, link } = event_location ? event_location : {};
@@ -42,41 +42,58 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
   const defaultProfileImage = '/asset/img/teams/others/default_profile.svg';
 
   // Lightbox left and right clicks
-  const handleClick = (photoKey, index) => {
+  // const handleClick = (photoKey, index) => {
+  //   setCurrentIndex(index);
+  //   setClickedImg(photo_gallery[photoKey]["Photo" + (index + 1)]);
+  // };
+
+  // const handelRotationRight = () => {
+  //   const totalLength = Object.keys(photo_gallery).length;
+  //   if (currentIndex + 1 >= totalLength) {
+  //     setCurrentIndex(0);
+  //     const newUrl = photo_gallery["Photo" + (currentIndex + 1)];
+  //     setClickedImg(newUrl);
+  //     return;
+  //   }
+  //   const newIndex = currentIndex + 1;
+  //   const newUrl = photo_gallery[`p${newIndex + 1}`];
+  //   const newItem = newUrl["Photo" + (newIndex + 1)];
+  //   setClickedImg(newItem);
+  //   setCurrentIndex(newIndex);
+  // };
+
+  // const handelRotationLeft = () => {
+  //   const totalLength = Object.keys(photo_gallery).length;
+  //   if (currentIndex === 0) {
+  //     setCurrentIndex(totalLength - 1);
+  //     const newUrl = photo_gallery[`p${totalLength - 1}`]["Photo" + (totalLength - 1)];
+  //     setClickedImg(newUrl);
+  //     return;
+  //   }
+  //   const newIndex = currentIndex - 1;
+  //   const newUrl = photo_gallery[`p${newIndex + 1}`];
+  //   const newItem = newUrl["Photo" + (newIndex + 1)];
+  //   setClickedImg(newItem);
+  //   setCurrentIndex(newIndex);
+  // };
+  const handleClick = (index) => {
     setCurrentIndex(index);
-    setClickedImg(photo_gallary[photoKey]["Photo" + (index + 1)]);
+    setClickedImg(photo_gallery[index]);
   };
 
   const handelRotationRight = () => {
-    const totalLength = Object.keys(photo_gallary).length;
-    if (currentIndex + 1 >= totalLength) {
-      setCurrentIndex(0);
-      const newUrl = photo_gallary["Photo" + (currentIndex + 1)];
-      setClickedImg(newUrl);
-      return;
-    }
-    const newIndex = currentIndex + 1;
-    const newUrl = photo_gallary[`p${newIndex + 1}`];
-    const newItem = newUrl["Photo" + (newIndex + 1)];
-    setClickedImg(newItem);
+    const totalLength = photo_gallery.length;
+    const newIndex = (currentIndex + 1) % totalLength;
     setCurrentIndex(newIndex);
+    setClickedImg(photo_gallery[newIndex]);
   };
 
   const handelRotationLeft = () => {
-    const totalLength = Object.keys(photo_gallary).length;
-    if (currentIndex === 0) {
-      setCurrentIndex(totalLength - 1);
-      const newUrl = photo_gallary[`p${totalLength - 1}`]["Photo" + (totalLength - 1)];
-      setClickedImg(newUrl);
-      return;
-    }
-    const newIndex = currentIndex - 1;
-    const newUrl = photo_gallary[`p${newIndex + 1}`];
-    const newItem = newUrl["Photo" + (newIndex + 1)];
-    setClickedImg(newItem);
+    const totalLength = photo_gallery.length;
+    const newIndex = (currentIndex - 1 + totalLength) % totalLength;
     setCurrentIndex(newIndex);
-  };
-
+    setClickedImg(photo_gallery[newIndex]);
+  };  
 
   return (
     <>
@@ -112,6 +129,8 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
                 src={thumbnail}
                 alt={title}
                 title={title}
+                height={500}
+                width={500}
               />
               <div className="pt-4 lg:pt-2 sm:pt-0 lg:pl-2 lg:text-sm md:text-sm sm:text-[14px] xs:text-[8px] lg:hidden text-[#2b2b2b] dark:text-[#cbcbcb] ">
                 <div className="font-semibold capitalize pb-2">
@@ -315,22 +334,22 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
             </div>
           )}
 
-          {/* Event Winners Gallary */}
-          {Object.keys(winners_gallary).length > 0 && (
+          {/* Event Winners Gallery */}
+          {Object.keys(winners_gallery).length > 0 && (
             <div>
-              <h1 className="flex items-center justify-center py-20 font-bold text-2xl capitalize">{winners_gallary_title}</h1>
+              <h1 className="flex items-center justify-center py-20 font-bold text-2xl capitalize">{winners_gallery_title}</h1>
               <div className="flex items-center justify-center">
                 <div className="grid grid-cols-3 lg:grid-cols-4 md:grid-cols-2 xs:grid-cols-1 gap-10">
-                  {Object.keys(winners_gallary).map((photoKey, index) => (
+                  {Object.keys(winners_gallery).map((photoKey, index) => (
                     <div key={index} className="wrapper-images">
                       <Image
                         className="rounded-lg shadow-2xl"
-                        src={winners_gallary[photoKey]["Winner" + (index + 1)]}
+                        src={winners_gallery[photoKey]["Winner" + (index + 1)]}
                         alt={`Winner ${index + 1}`}
                         width={300}
                         height={200}
                       />
-                      <h1 className="flex items-center justify-center pt-2 font-bold sm:text-sm">{winners_gallary[photoKey].text}</h1>
+                      <h1 className="flex items-center justify-center pt-2 font-bold sm:text-sm">{winners_gallery[photoKey].text}</h1>
                     </div>
                   ))}
                 </div>
@@ -338,24 +357,24 @@ const EventPage = ({ title, thumbnail, description, organizers = {}, event_locat
             </div>
           )}
 
-          {/* Event Photo Gallary */}
+          {/* Event Photo Gallery */}
           <div className="">
-            {Object.keys(photo_gallary).length !== 0 && (
+            {photo_gallery.length !== 0 && (
               <div className="pt-8">
                 <h1 className="flex items-center justify-center py-8 text-2xl capitalize font-bold">
                   Photo Gallery
                 </h1>
                 <div className="flex items-center justify-center">
                   <div className="grid grid-cols-5 lg:grid-cols-4 md:grid-cols-2 xs:grid-cols-1 gap-10">
-                    {Object.keys(photo_gallary).map((photoKey, index) => (
+                    {photo_gallery.map((photo, index) => (
                       <div key={index} className="wrapper-images">
                         <Image
                           className="rounded-lg shadow-2xl cursor-pointer"
-                          src={photo_gallary[photoKey]["Photo" + (index + 1)]}
+                          src={`${photo}`}
                           alt={`Photo ${index + 1}`}
                           width={300}
                           height={200}
-                          onClick={() => handleClick(photoKey, index)}
+                          onClick={() => handleClick(index)}
                         />
                       </div>
                     ))}

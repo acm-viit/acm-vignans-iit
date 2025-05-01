@@ -39,7 +39,7 @@ const MemberProfile = ({ name, profilePic, role, about = "", github = "", linked
 
         <div className="flex items-center justify-center ">
           <div className="w-60 h-60 overflow-hidden rounded-full">
-            <Image src={profilePic} alt={`${name}-profile-pic`} className="" />
+            <Image src={`/asset/img/teams${profilePic}` || profilePic} height={500} width={500} alt={`${name}-profile-pic`} className="" />
           </div>
         </div>
 

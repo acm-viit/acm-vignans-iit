@@ -3,11 +3,16 @@ const { withContentlayer } = require('next-contentlayer');
 
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
   compiler: {
-    removeConsole: true,
+    removeConsole: {
+      exclude: ['error', 'warn'],
+    },
   },
 };
 

@@ -21,6 +21,8 @@ const EventCard = ({ link, title, eventdate, featuredImage, description, rsvp, c
               alt={title}
               className="object-cover w-full h-full  rounded-t-lg "
               id="featured-image"
+              height={500}
+              width={500}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
               priority

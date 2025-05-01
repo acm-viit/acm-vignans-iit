@@ -10,7 +10,7 @@ const ImageModal = ({ clickedImg, setClickedImg, handelRotationRight, handelRota
     return (
         <>
             <div className="overlay dismiss" onClick={handleClick}>
-                <Image src={clickedImg} alt="Light Box View" className="rounded-lg" />
+                <Image src={clickedImg} alt="Light Box View" height={500} width={500} className="rounded-lg" />
                 <span className="dismiss" onClick={handleClick}>
                     <div className="" onClick={handleClick}>
                         <span

@@ -21,7 +21,7 @@ const ProfileCard = ({ href = "#", profilePic, name, className, role, twitter, l
       <div className={`card ${className}`}>
         <Link href={href}>
           <div className={`imgBx ${imgBxClassName}`}>
-            <Image src={`${profilePic}`} width={500} height={500} alt={name} className="select-none" />
+            <Image src={profilePic} width={500} height={500} alt={name} className="select-none" />
           </div>
         </Link>
         <div className="content">
